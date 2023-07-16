@@ -1,15 +1,1 @@
-1) ilk başta kullancı giriş yaptı ve oto mesaj geldi oto mesajları cevaplamam lazım bu yüzdende ilk kez girip girmediğini anlamam lazım yada bunu anladığım yerde yapmam lazım
-2) kullanıcıyı giriş yapabilmesi için ilk başta nick sonra pass komutlarını yazdırmam lazım
-    2.1) bu adımda kullanıcı bu işlemleri yapana kadar mesajlarını hiç kimseye iletmemem gerekiyor
-3) bu adımdan sonra artık kullanıcı sisteme giriş yapmış olucak kanalları ayarlamam lazım kanallarda kullanıcıların gözükmesi lazım client tarafı otomatik yapıcak
-    3.1) aslında herşey bir kanal bir ana panel sadece kod girebildiği bir kısım eğer bir komut girmiyorsa diğer mesajların bir önemi yok
 
-
-gelen mesajlar için bir class oluştur ve tamamaını içerisinde işle
-işledikten sonra test.cpp de olduğu gibi operatör overloading yap ve işlediğin veriyi döndür
-döndürdüğün yerdede sendle ve geç
-
-cap komutunu kontrol et unutma melihten hangi sırayla yapıldığına bak
-
-kendi kodunu revize et ve şuna çevir herkese mesaj atmasın sadece tek bir kullanıcıyla sanki bir konuşma yapıyormuş gibi clientla sadece komut gönder ve al
-daha sonradan diğer şeyleri eklemek kolay olucaktır
