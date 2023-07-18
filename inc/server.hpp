@@ -15,11 +15,16 @@
 #include "getMessage.hpp"
 #include "Channel.hpp"
 #include "Users.hpp"
+#include "utils.hpp"
+#include "numeric.hpp"
 
+class getMessage ;
 class Server {
 public:
     Server(int port);
     void start();
+    Users users;
+    Channel channels;
 
 private:
     int port;
@@ -28,8 +33,6 @@ private:
     std::map<int, std::string> clients;
     std::string hostName;
 
-    Users users;
-    Channel channels;
 
     void setHostName();
     int createSocket();

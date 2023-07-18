@@ -2,6 +2,22 @@
 #include <cerrno>
 #include <errno.h>
 
+template <typename T>
+T StringToNumber(const std::string& Text)
+{
+    std::istringstream ss(Text);
+    T result;
+    return ss >> result ? result : 0;
+}
+
+template <typename T>
+std::string IntToString(T value)
+{
+    std::ostringstream oss;
+    oss << value;
+    return oss.str();
+}
+
 struct PollFdFinder
 {
     int clientSocket;
@@ -61,11 +77,12 @@ void Server::handlePollEvents()
         {
             if (pollFds[i].fd == serverSocket)
             {
-                handleNewConnection(serverSocket);
+                handleNewConnection(serverSocket); // yeni bağlantı varsa
+                std::cout << pollFds[i].fd << std::endl;
             }
             else
             {
-                handleClientSocket(pollFds[i].fd);
+                handleClientSocket(pollFds[i].fd); // yeni bağlantı yoksa mesaj gelmiştir
             }
         }
     }
@@ -145,6 +162,8 @@ void Server::addClientToPolling(int clientSocket)
     struct pollfd newClientPollFd;
     newClientPollFd.fd = clientSocket;
     newClientPollFd.events = POLLIN;
+    std::string undefined = std::string("undefined") +  IntToString(newClientPollFd.fd);
+    users.createUser(newClientPollFd.fd,undefined,undefined,undefined,undefined);
     pollFds.push_back(newClientPollFd);
 }
 
@@ -179,8 +198,8 @@ void Server::handleClientMessage(int clientSocket)
         buffer[numBytes] = '\0';
         std::string message = buffer;
         std::cout << message << std::endl;
-        printReceivedMessage(clientSocket, message);
-        sendMessageToClients(clientSocket, message);
+        printReceivedMessage(clientSocket, message); // geln mesajı cevapla
+        sendMessageToClients(clientSocket, message); // herkese gönder şimdilik var
     }
 }
 
@@ -189,9 +208,9 @@ void Server::printReceivedMessage(int clientSocket, const std::string &message)
     std::cout << "Received message from client " << clientSocket << ": " << message << std::endl;
     // gelen mesaj CAP LS ise
     // bu mesajları burada almak mantıksız böyle çirkin if else yapmak yerine bir class oluştururum o class constructorunda string gelen mesajı alırım işlemleri içerisinde yaparım
-    std::string capLs = getMessage(message) = message;
-    
-    send(clientSocket, capLs.c_str(), capLs.length(), 0);
+    std::string capLs = getMessage(message,*this,clientSocket) = message;
+    if(capLs != "")
+        send(clientSocket, capLs.c_str(), capLs.length(), 0);
 }
 
 void Server::sendMessageToClients(int senderSocket, const std::string &message)
@@ -223,7 +242,6 @@ void Server::closeClientSocket(int clientSocket)
         pollFds.erase(pollIt);
     }
 }
-
 
 void Server::setHostName()
 {
