@@ -2,9 +2,7 @@
 
 Users::Users()
 {
-    userCount = 0;
     // Constructor implementation
-
 }
 
 Users::~Users()
@@ -12,29 +10,17 @@ Users::~Users()
     // Destructor implementation
 }
 
-void Users::createUser(int fd,const std::string& username,const std::string& nick ,const std::string& hostname,const std::string& realName)
+void Users::createUser(int fd, const std::string& username, const std::string& nick, const std::string& hostname, const std::string& realName)
 {
-    setAllUserFd(fd);
-    setHostName(fd,hostname);
-    setUserName(fd,username);
-    setNickName(fd,nick);
-    setRealName(fd,realName);
-    setUserFd(getUsername(fd),fd);
-    setUserAuth(getUsername(fd),false);
-    std::vector<bool> temp;
-    temp.push_back(false);
-    temp.push_back(false);
-    temp.push_back(false);
-    setUserAuthVec(getUsername(fd),temp);
-    userCount++;
-    std::cout << "user create" << "\n";
-}
-
-// Getters
-
-int Users::getAllUsersFd(int index) const
-{
-    return (this->allUsersFd[index]);
+    addAllUserFd(fd);
+    setHostName(fd, hostname);
+    setUserName(fd, username);
+    setNickName(fd, nick);
+    setRealName(fd, realName);
+    setUserAuth(fd, false);
+    struct UsersAuth userAuth(false, false, false);
+    setUserAuthStruct(fd, userAuth);
+    std::cout << "user created" << "\n";
 }
 
 std::string Users::getUsername(int id) const
@@ -47,6 +33,12 @@ std::string Users::getUsername(int id) const
     return "";
 }
 
+void Users::setUserName(int id, const std::string& name)
+{
+    username[id] = name;
+}
+
+
 std::string Users::getNickname(int id) const
 {
     std::map<int, std::string>::const_iterator it = nickname.find(id);
@@ -55,6 +47,33 @@ std::string Users::getNickname(int id) const
         return it->second;
     }
     return "";
+}
+
+int Users::getNickname(const std::string& nick) const
+{
+	for (std::map<int, std::string>::const_iterator it = nickname.begin(); it != nickname.end(); ++it)
+	{
+		if (it->second == nick)
+		{
+			return it->first;
+		}
+	}
+	return -1;
+}
+
+void Users::setNickName(int id, const std::string& name)
+{
+    nickname[id] = name;
+}
+
+bool Users::controlNickName(const std::string name)
+{
+	for (size_t i = 0; i < this->nickname.size(); i++)
+	{
+		if (name == trim(this->nickname[i]))
+			return false;
+	}
+	return true;
 }
 
 std::string Users::getHostname(int id) const
@@ -67,6 +86,11 @@ std::string Users::getHostname(int id) const
     return "";
 }
 
+void Users::setHostName(int id, const std::string& host)
+{
+    hostname[id] = host;
+}
+
 std::string Users::getRealname(int id) const
 {
     std::map<int, std::string>::const_iterator it = realname.find(id);
@@ -77,73 +101,22 @@ std::string Users::getRealname(int id) const
     return "";
 }
 
+void Users::setRealName(int id, const std::string& name)
+{
+    realname[id] = name;
+}
+
 std::vector<std::string> Users::getChannels() const
 {
     return channels;
 }
 
-int Users::getUserFd(const std::string &username) const
-{
-    std::map<std::string, int>::const_iterator it = usersFd.find(username);
-    if (it != usersFd.end())
-    {
-        return it->second;
-    }
-    return -1; // Return -1 if not found
-}
-
-bool Users::getUserAuth(const std::string &username) const
-{
-    std::map<std::string, bool>::const_iterator it = usersAuth.find(username);
-    if (it != usersAuth.end())
-    {
-        return it->second;
-    }
-    return false;
-}
-
-std::vector<bool> Users::getUserAuthVec(const std::string &username) const
-{
-    std::map<std::string, std::vector<bool> >::const_iterator it = usersAuthVec.find(username);
-    if (it != usersAuthVec.end())
-    {
-        return it->second;
-    }
-    return std::vector<bool>(); // Return an empty vector if not found
-}
-
-// Setters
-void Users::setAllUserFd(int value)
-{
-    this->allUsersFd.push_back(value);
-}
-
-void Users::setUserName(int id, const std::string &name)
-{
-    username[id] = name;
-}
-
-void Users::setNickName(int id, const std::string &name)
-{
-    nickname[id] = name;
-}
-
-void Users::setHostName(int id, const std::string &host)
-{
-    hostname[id] = host;
-}
-
-void Users::setRealName(int id, const std::string &name)
-{
-    realname[id] = name;
-}
-
-void Users::addChannel(const std::string &channel)
+void Users::addChannel(const std::string& channel)
 {
     channels.push_back(channel);
 }
 
-void Users::removeChannel(const std::string &channel)
+void Users::removeChannel(const std::string& channel)
 {
     std::vector<std::string>::iterator it = std::find(channels.begin(), channels.end(), channel);
     if (it != channels.end())
@@ -152,82 +125,126 @@ void Users::removeChannel(const std::string &channel)
     }
 }
 
-void Users::setUserFd(const std::string &username, int fd)
+int Users::getAllUsersFd(int index) const
 {
-    usersFd[username] = fd;
+    if (index >= 0 && index < (int)allUsersFd.size())
+        return allUsersFd[index];
+    return -1;
 }
 
-void Users::setUserAuth(const std::string &username, bool auth)
+std::vector<int> Users::getAllUsersFd() const
 {
-    usersAuth[username] = auth;
+    return(this->allUsersFd);
 }
 
-void Users::setUserAuthVec(const std::string &username, const std::vector<bool> &authVec)
+void Users::addAllUserFd(int fd)
 {
-    usersAuthVec[username] = authVec;
+    allUsersFd.push_back(fd);
 }
 
-void Users::setUserAuthVec(const std::string &username,int autVecIndex ,bool boolean)
+bool Users::getUserAuth(int fd) const
 {
-    usersAuthVec[username][autVecIndex] = boolean;
-}
-
-void Users::updateUserFd(const std::string& oldUsername, const std::string& newUsername)
-{
-    std::map<std::string, int>::iterator it = usersFd.find(oldUsername);
-    if (it != usersFd.end())
-    {
-        int fd = it->second;
-        usersFd.erase(it);
-        usersFd.insert(std::make_pair(newUsername, fd));
-    }
-}
-
-void Users::updateUserAuth(const std::string& oldUsername, const std::string& newUsername)
-{
-    std::map<std::string, bool>::iterator it = usersAuth.find(oldUsername);
+    std::map<int, bool>::const_iterator it = usersAuth.find(fd);
     if (it != usersAuth.end())
-    {
-        bool auth = it->second;
-        usersAuth.erase(it);
-        usersAuth.insert(std::make_pair(newUsername, auth));
-    }
-}
-
-void Users::updateUserAuthVec(const std::string& oldUsername, const std::string& newUsername)
-{
-    std::map<std::string, std::vector<bool> >::iterator it = usersAuthVec.find(oldUsername);
-    if (it != usersAuthVec.end())
-    {
-        std::vector<bool>& authVec = it->second;
-        usersAuthVec.erase(it);
-        usersAuthVec.insert(make_pair(newUsername,authVec));
-    }
-}
-
-bool Users::getUserPassAuth(const std::string& _username) const
-{
-    std::map<std::string, bool>::const_iterator it = usersPassAuth.find(_username);
-    if (it != usersPassAuth.end())
     {
         return it->second;
     }
-    return(false);
+    return false;
 }
 
-void Users::setUserPassAuth(const std::string& _username, bool _auth)
+void Users::setUserAuth(int fd, bool auth)
 {
-    usersPassAuth[_username] = _auth;
+    usersAuth[fd] = auth;
 }
 
-// update user pass auth
-void Users::updateUserPassAuth(const std::string& oldUsername, const std::string& newUsername)
+void Users::autoUpdateUserAuth(int fd)
 {
-    std::map<std::string, bool>::iterator it = usersPassAuth.find(oldUsername);
-    if (it != usersPassAuth.end())
+    std::map<int, bool>::iterator it = usersAuth.find(fd);
+    if (it != usersAuth.end())
     {
-        bool auth = it->second;
-        usersPassAuth.erase(it);
-        usersPassAuth.insert(std::make_pair(newUsername, auth));
+        bool auth_pass = getUserAuthStruct(fd).userPass;
+        bool auth_nick = getUserAuthStruct(fd).userNick;
+        bool auth_user = getUserAuthStruct(fd).userUser;
+        bool auth = auth_pass && auth_nick && auth_user;
+        setUserAuth(fd, auth);
     }
+}
+
+void Users::setUserAuthStruct(int fd, struct UsersAuth auth)
+{
+    usersAuthStruct[fd] = auth;
+}
+
+struct UsersAuth Users::getUserAuthStruct(int fd) const
+{
+    std::map<int, UsersAuth>::const_iterator it = usersAuthStruct.find(fd);
+    if (it != usersAuthStruct.end())
+    {
+        return it->second;
+    }
+    return UsersAuth();
+}
+
+void Users::setUserAuthStruct(int fd, const std::string& header, bool auth)
+{
+    std::map<int, UsersAuth>::iterator it = usersAuthStruct.find(fd);
+    if (it != usersAuthStruct.end())
+    {
+        if (header == "pass")
+            it->second.userPass = auth;
+        else if (header == "nick")
+            it->second.userNick = auth;
+        else if (header == "user")
+            it->second.userUser = auth;
+    }
+}
+
+bool Users::getUserAuthStruct(int fd, const std::string& header) const
+{
+    std::map<int, UsersAuth>::const_iterator it = usersAuthStruct.find(fd);
+    if (it != usersAuthStruct.end())
+    {
+        if (header == "pass")
+            return it->second.userPass;
+        else if (header == "nick")
+            return it->second.userNick;
+        else if (header == "user")
+            return it->second.userUser;
+    }
+    return false;
+}
+
+void Users::setUserWelcomeMessage(int fd, bool welcome)
+{
+    usersWelcomeMessage[fd] = welcome;
+}
+
+bool Users::getUserWelcomeMessage(int fd) const
+{
+    std::map<int, bool>::const_iterator it = usersWelcomeMessage.find(fd);
+    if (it != usersWelcomeMessage.end())
+    {
+        return it->second;
+    }
+    return false;
+}
+
+void Users::setUserMod(int id, int mod)
+{
+    usersMod[id] = mod;
+}
+
+int Users::getUserMod(int id) const
+{
+    std::map<int, int>::const_iterator it = usersMod.find(id);
+    if (it != usersMod.end())
+    {
+        return it->second;
+    }
+    return -1;
+}
+
+std::string Users::getPrefix(const int &fd) const
+{
+    return ":" + getNickname(fd) + "!" + getUsername(fd) + "@" + getHostname(fd);
 }

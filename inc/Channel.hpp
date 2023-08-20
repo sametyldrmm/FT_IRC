@@ -6,10 +6,10 @@ class Channel
 {
 private:
     std::vector<std::string> allChannels;
-    std::map<std::string, std::vector<std::string> > channelUsers;
-    std::map<std::string, std::vector<std::string> > channelAdmins;
+    std::map<std::string, std::vector<int> > channelUsers;
+    //std::map<std::string, std::vector<int> > channelAdmins;
     std::map<std::string, std::string> channelTopics;
-    std::map<std::string, std::string> channelOwner;
+    std::map<std::string, int> channelOwner;
 
 public:
     Channel();
@@ -17,37 +17,49 @@ public:
 
     // Getter functions
     std::vector<std::string> getAllChannels() const;
-    std::vector<std::string> getChannelUsers(const std::string& channel) const;
-    std::vector<std::string> getChannelAdmins(const std::string& channel) const;
+    bool getAllChannels(const std::string& channel) const;
+    std::vector<int> getChannelUsers(const std::string& channel) const;
+    bool getChannelUsers(const std::string& channel,int fd) const;
+    // std::vector<int> getChannelAdmins(const std::string& channel) const;
     std::string getChannelTopic(const std::string& channel) const;
-    std::string getChannelOwner(const std::string& channel) const;
+    int getChannelOwner(const std::string& channel) const;
 
+    void allChannelsPushBack(const std::string& channel);
+    void allChannelsremove(const std::string& channel);
     // Setter functions
     void setAllChannels(const std::vector<std::string>& channels);
-    void setChannelUsers(const std::string& channel, const std::vector<std::string>& users);
-    void setChannelAdmins(const std::string& channel, const std::vector<std::string>& admins);
+    void setChannelUsers(const std::string& channel, const std::vector<int>& users);
+    // void setChannelAdmins(const std::string& channel, const std::vector<int>& admins);
+    // void setChannelAdmins(const std::string& channel, const int& admin);
     void setChannelTopic(const std::string& channel, const std::string& topic);
-    void setChannelOwner(const std::string& channel, const std::string& owner);
+    void setChannelOwner(const std::string& channel, const int owner);
 
     // Update functions
-    void updateChannelUsers(const std::string& channel, const std::vector<std::string>& users);
-    void updateChannelAdmins(const std::string& channel, const std::vector<std::string>& admins);
+    void updateChannelUsers(const std::string& channel, const std::vector<int> users);
+    // void updateChannelAdmins(const std::string& channel, const std::vector<int> admins);
     void updateChannelTopic(const std::string& channel, const std::string& topic);
-    void updateChannelOwner(const std::string& channel, const std::string& owner);
+    void updateChannelOwner(const std::string& channel, int owner);
 
     // Additional update functions for modifying vector values
-    void updateChannelUser(const std::string& channel, const std::string& oldUser, const std::string& newUser);
-    void updateChannelAdmin(const std::string& channel, const std::string& oldAdmin, const std::string& newAdmin);
-    void removeChannelUser(const std::string& channel, const std::string& user);
-    void removeChannelAdmin(const std::string& channel, const std::string& admin);
+    void updateChannelUser(const std::string& channel, const int oldUser, const int newUser);
+    // void updateChannelAdmin(const std::string& channel, const int oldAdmin, const int newAdmin);
+    void removeChannelUser(const std::string& channel, int fd);
+    // void removeChannelAdmin(const std::string& channel, int fd);
 
     // Additional update functions for modifying vector values
-    void addChannelUser(const std::string& channel, const std::string& user);
-    void addChannelAdmin(const std::string& channel, const std::string& admin);
+    void addChannelUser(const std::string& channel, int fd);
+    // void addChannelAdmin(const std::string& channel,int fd);
 
-    std::vector<std::string> findChannelsByUser(const std::string& user) const;
-    void renameUserInChannels( const std::string& oldUserName, const std::string& newUserName);
+    std::vector<std::string> findChannelsByUser(int fd) const;
+	
+	// RemoveChannelUsers
+	bool removeChannelOwner(const std::string& channel);
+	bool removeChannelAllChannel(const std::string& channel);
+	bool removeChannelUsers(const std::string& channel);
+	bool removeChannelTopic(const std::string& channel);
+	bool removeChannelAllInfo(const std::string& channel);
 
+	
 };
 
 #endif  // CHANNEL_HPP

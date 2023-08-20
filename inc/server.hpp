@@ -25,6 +25,12 @@ public:
     void start();
     Users users;
     Channel channels;
+    int Password ;
+	
+	void channelAllChangeUserInfoPush(int fd);
+	void channelChangeUserInfoPush(int fd, std::string channelName);
+	void channelAllChangeUserInfoPush(int fd, std::string message);
+	void channelChangeUserInfoPush(int fd, std::string channelName, std::string message);
 
 private:
     int port;
@@ -32,7 +38,6 @@ private:
     std::vector<struct pollfd> pollFds;
     std::map<int, std::string> clients;
     std::string hostName;
-
 
     void setHostName();
     int createSocket();
@@ -53,6 +58,8 @@ private:
     int getClientPort(const sockaddr_in &clientAddress);
     void addClient(int clientSocket, const std::string &clientAddress);
     void addClientToPolling(int clientSocket);
+
+	
 
 };
 

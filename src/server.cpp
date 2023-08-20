@@ -1,6 +1,7 @@
 #include "../inc/server.hpp"
 #include <cerrno>
 #include <errno.h>
+#include "../inc/numeric.hpp"
 
 template <typename T>
 T StringToNumber(const std::string& Text)
@@ -29,7 +30,10 @@ struct PollFdFinder
     }
 };
 
-Server::Server(int port) : port(port), serverSocket(0) {}
+Server::Server(int port) : port(port), serverSocket(0) 
+{
+    Password = 123;
+}
 
 void Server::polError(int pollSocket)
 {
@@ -78,7 +82,6 @@ void Server::handlePollEvents()
             if (pollFds[i].fd == serverSocket)
             {
                 handleNewConnection(serverSocket); // yeni bağlantı varsa
-                std::cout << pollFds[i].fd << std::endl;
             }
             else
             {
@@ -164,7 +167,7 @@ void Server::addClientToPolling(int clientSocket)
     newClientPollFd.events = POLLIN;
     std::string undefined = std::string("undefined") +  IntToString(newClientPollFd.fd);
     users.createUser(newClientPollFd.fd,undefined,undefined,undefined,undefined);
-    pollFds.push_back(newClientPollFd);
+	pollFds.push_back(newClientPollFd);
 }
 
 void Server::handleClientSocket(int clientSocket)
@@ -209,20 +212,24 @@ void Server::printReceivedMessage(int clientSocket, const std::string &message)
     // gelen mesaj CAP LS ise
     // bu mesajları burada almak mantıksız böyle çirkin if else yapmak yerine bir class oluştururum o class constructorunda string gelen mesajı alırım işlemleri içerisinde yaparım
     std::string capLs = getMessage(message,*this,clientSocket) = message;
-    if(capLs != "")
-        send(clientSocket, capLs.c_str(), capLs.length(), 0);
+    if(capLs.size() > 5)
+    {
+        sender(clientSocket, capLs.c_str());
+    }
 }
 
 void Server::sendMessageToClients(int senderSocket, const std::string &message)
 {
-    for (size_t i = 0; i < pollFds.size(); i++)
-    {
-        int socket = pollFds[i].fd;
-        if (socket != serverSocket && socket != senderSocket)
-        {
-            send(socket, message.c_str(), message.length(), 0);
-        }
-    }
+    (void)senderSocket;
+    (void)message;
+    // for (size_t i = 0; i < pollFds.size(); i++)
+    // {
+    //     int socket = pollFds[i].fd;
+    //     if (socket != serverSocket && socket != senderSocket)
+    //     {
+    //         sender(socket, message.c_str());
+    //     }
+    // }
 }
 
 void Server::closeClientSocket(int clientSocket)
@@ -253,4 +260,66 @@ void Server::setHostName()
         exit(1);
     }
     hostName = hostname;
+}
+
+void Server::channelChangeUserInfoPush(int fd, std::string channelName)
+{
+    std::string all_users = "";
+    int own_fd = this->channels.getChannelOwner(channelName);
+    all_users += this->users.getNickname(own_fd) + " ";
+	std::vector<int> channelUsers = this->channels.getChannelUsers(channelName);
+    for (int i = 0; i < (int)channelUsers.size(); i++)
+    {
+        if (own_fd != channelUsers[i])
+            all_users += this->users.getNickname(channelUsers[i]) + " ";
+    }
+	all_users = trim(all_users);
+    for (int i = 0; i < (int)channelUsers.size(); i++)
+    {
+        fd = channelUsers[i];
+        std::string _353 = RPL_NAMEREPLY( this->users.getHostname(fd), this->users.getNickname(fd), this->users.getNickname(fd), "#" + channelName, "@" + all_users) + "\r\n";
+        std::string _356 = RPL_ENDOFNAMES(this->users.getHostname(fd), this->users.getNickname(fd), this->users.getNickname(fd), "#" + channelName) + "\r\n";
+        sender(fd, _353.c_str());
+        // sender(fd, getMessage::senderCapLs().c_str());
+        sender(fd, _356.c_str());
+    }
+}
+
+void Server::channelAllChangeUserInfoPush(int fd)
+{
+	std::vector<std::string> userChannels = this->channels.findChannelsByUser(fd);
+
+	for (size_t i = 0; i < userChannels.size(); i++)
+	{
+		channelChangeUserInfoPush(fd, userChannels[i]);
+		std::cout << "channel name" << userChannels[i] << " ";
+	}
+	
+}
+
+
+
+void Server::channelChangeUserInfoPush(int fd, std::string channelName, std::string message)
+{
+    std::string all_users = "";
+    int own_fd = this->channels.getChannelOwner(channelName);
+    all_users += this->users.getNickname(own_fd) + " ";
+	std::vector<int> channelUsers = this->channels.getChannelUsers(channelName);
+
+    for (int i = 0; i < (int)channelUsers.size(); i++)
+    {
+        fd = channelUsers[i];
+        sender(fd, message);
+    }
+}
+
+void Server::channelAllChangeUserInfoPush(int fd, std::string message)
+{
+	std::vector<std::string> userChannels = this->channels.findChannelsByUser(fd);
+
+	for (size_t i = 0; i < userChannels.size(); i++)
+	{
+		channelChangeUserInfoPush(fd, userChannels[i], message);
+		std::cout << "channel name" << userChannels[i] << " ";
+	}
 }

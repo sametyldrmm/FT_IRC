@@ -1,0 +1,1977 @@
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:undefined4 432 Z USER ZEHRA :Erroneus nickname
+
+:syildiri!undefined4@undefined4 NICK syildiri
+
+:127.0.0.1 001 syildiri :Welcome to the Internet Relay Network syildiri!Z@127.0.0.1
+
+:127.0.0.1 002 syildiri :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 syildiri :This server was created 20.00
+
+:syildiri!Z@127.0.0.1 JOIN #42
+
+:syildiri!Z@127.0.0.1 MODE #42 +o syildiri
+
+:syildiri!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 syildiri = #42 :@syildiri
+
+:127.0.0.1 366 syildiri #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 syildiri = #42 :@syildiri S
+
+:127.0.0.1 366 syildiri #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@syildiri S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSG #42 :WEFSDGHJKL
+
+:syildiri!Z@127.0.0.1 PRIVMSG #42 :SFDGHJ,
+
+:Z!Z@127.0.0.1 NICK Z
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5 432 undefined5 USER ZEHRA :Erroneus nickname
+
+:syildiri!undefined5@undefined5 NICK syildiri
+
+:Z!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S Z
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = # :@S Z
+
+:127.0.0.1 366 Z # :End of /NAMES list
+
+:Z!Z@127.0.0.1 PRIVMSG #42 :ghjkl
+
+:Z!Z@127.0.0.1 PRIVMSG #42 :jklş
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined6@undefined6 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S Z KRAL
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = # :@S Z KRAL
+
+:127.0.0.1 366 Z # :End of /NAMES list
+
+:127.0.0.1 353 KRAL = # :@S Z KRAL
+
+:127.0.0.1 366 KRAL # :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!KRAL@127.0.0.1 JOIN #1
+
+:KRAL!KRAL@127.0.0.1 MODE #1 +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #1
+
+:127.0.0.1 353 KRAL = #1 :@KRAL
+
+:127.0.0.1 366 KRAL #1 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined6@undefined6 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #1
+
+:127.0.0.1 353 KRAL = #1 :@KRAL Z
+
+:127.0.0.1 366 KRAL #1 :End of /NAMES list
+
+:127.0.0.1 353 Z = # :@KRAL Z
+
+:127.0.0.1 366 Z # :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!S@127.0.0.1 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #1
+
+:127.0.0.1 353 KRAL = #1 :@KRAL Z S
+
+:127.0.0.1 366 KRAL #1 :End of /NAMES list
+
+:127.0.0.1 353 Z = # :@KRAL Z S
+
+:127.0.0.1 366 Z # :End of /NAMES list
+
+:127.0.0.1 353 S = # :@KRAL Z S
+
+:127.0.0.1 366 S # :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #1
+
+:Z!Z@127.0.0.1 MODE #1 +o Z
+
+:Z!Z@127.0.0.1 JOIN #1
+
+:127.0.0.1 353 Z = #1 :@Z
+
+:127.0.0.1 366 Z #1 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #1
+
+:127.0.0.1 353 Z = #1 :@Z S
+
+:127.0.0.1 366 Z #1 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #1
+
+:KRAL!KRAL@127.0.0.1 MODE #1 +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #1
+
+:127.0.0.1 353 KRAL = #1 :@KRAL
+
+:127.0.0.1 366 KRAL #1 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #1
+
+:127.0.0.1 353 KRAL = #1 :@KRAL S
+
+:127.0.0.1 366 KRAL #1 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #1
+
+:Z!Z@127.0.0.1 MODE #1 +o Z
+
+:Z!Z@127.0.0.1 JOIN #1
+
+:127.0.0.1 353 Z = #1 :@Z
+
+:127.0.0.1 366 Z #1 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined5@undefined5 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #1
+
+:127.0.0.1 353 Z = #1 :@Z KRAL
+
+:127.0.0.1 366 Z #1 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S Z
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = #42 :@S Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined6@undefined6 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S Z KRAL
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = #42 :@S Z KRAL
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 KRAL = #42 :@S Z KRAL
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:S!S@127.0.0.1 KICK #42 S
+
+:Z!Z@127.0.0.1 KICK #42 S
+
+:KRAL!KRAL@127.0.0.1 KICK #42 S
+
+:127.0.0.1 353 Z = #42 :@Z KRAL
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 KRAL = #42 :@Z KRAL
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z KRAL S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 KRAL = #42 :@Z KRAL S
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z KRAL S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 442 Z #42 :You're not on that channel
+
+:KRAL!KRAL@127.0.0.1 MODE #42 +o KRAL
+
+:Z!Z@127.0.0.1 KICK #42 Z
+
+:KRAL!KRAL@127.0.0.1 KICK #42 Z
+
+:S!S@127.0.0.1 KICK #42 Z
+
+:127.0.0.1 353 KRAL = #42 :@KRAL S
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@KRAL S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:KRAL!KRAL@127.0.0.1 KICK #42 KRAL
+
+:S!S@127.0.0.1 KICK #42 KRAL
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:S!S@127.0.0.1 KICK #42 S
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S Z
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = #42 :@S Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:S!S@127.0.0.1 KICK #42 S
+
+:Z!Z@127.0.0.1 KICK #42 S
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+ 
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S Z
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = #42 :@S Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:S!S@127.0.0.1 KICK #42 S
+
+:Z!Z@127.0.0.1 KICK #42 S
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 403 Z #42 :No such channel
+
+:127.0.0.1 403 Z #42 :No such channel
+
+:127.0.0.1 403 Z #42 :No such channel
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:S!S@127.0.0.1 KICK #42 S
+
+ 
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined5@undefined5 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:KRAL!KRAL@127.0.0.1 MODE #42 +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 KRAL = #42 :@KRAL
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 KRAL = #42 :@KRAL S
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@KRAL S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 PRIVMSG #42 :SADFGHJK
+
+:KRAL!KRAL@127.0.0.1 PRIVMSG #42 :A<SZGDXFHC
+
+:S!S@127.0.0.1 PRIVMSG #42 :SDFGHJ
+
+:S!S@127.0.0.1 PRIVMSG #42 :ASDFGCH
+
+:S!S@127.0.0.1 PRIVMSG #42 :ZSDXFCGVBN
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:KRAL!KRAL@127.0.0.1 KICK #42 KRAL
+
+:S!S@127.0.0.1 KICK #42 KRAL
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:S!S@127.0.0.1 KICK #42 S
+
+ 
+:S!S@127.0.0.1 JOIN #42
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S KRAL
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 KRAL = #42 :@S KRAL
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:S!S@127.0.0.1 PART #42 No boundaries on the net!
+
+:S!S@127.0.0.1 PART #42 No boundaries on the net!
+
+:KRAL!KRAL@127.0.0.1 PART #42 No boundaries on the net!
+
+:KRAL!KRAL@127.0.0.1 PART #42 No boundaries on the net!
+
+:127.0.0.1 353 S = #42 :@S KRAL
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 KRAL = #42 :@S KRAL
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 JOIN #ER
+
+:KRAL!KRAL@127.0.0.1 MODE #ER +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #ER
+
+:127.0.0.1 353 KRAL = #ER :@KRAL
+
+:127.0.0.1 366 KRAL #ER :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #qqq
+
+:KRAL!KRAL@127.0.0.1 MODE #qqq +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 KRAL = #qqq :@KRAL
+
+:127.0.0.1 366 KRAL #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined4@undefined4 NICK KRAL
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:S!S@127.0.0.1 NICK S
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:S!S@127.0.0.1 MODE #qqq +o S
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S Z
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:127.0.0.1 353 Z = #qqq :@S Z
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+:S!S@127.0.0.1 PART #qqq No boundaries on the net!
+
+:S!S@127.0.0.1 PART #qqq No boundaries on the net!
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:Z!Z@127.0.0.1 MODE #qqq +o Z
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 Z = #qqq :@Z
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 Z = #qqq :@Z S
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+:127.0.0.1 353 S = #qqq :@Z S
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:S!S@127.0.0.1 MODE #qqq +o S
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:S!S@127.0.0.1 PART #qqq No boundaries on the net!
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S Z
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:127.0.0.1 353 Z = #qqq :@S Z
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:Z!Z@127.0.0.1 MODE #qqq +o Z
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 Z = #qqq :@Z
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 Z = #qqq :@Z S
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+:127.0.0.1 353 S = #qqq :@Z S
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+:S!S@127.0.0.1 PART #qqq No boundaries on the net!
+
+:S!S@127.0.0.1 PART #qqq No boundaries on the net!
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:S!S@127.0.0.1 MODE #qqq +o S
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S Z
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:127.0.0.1 353 Z = #qqq :@S Z
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+:S!S@127.0.0.1 PART #qqq No boundaries on the net!
+
+:S!S@127.0.0.1 PART #qqq No boundaries on the net!
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:Z!Z@127.0.0.1 MODE #qqq +o Z
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 Z = #qqq :@Z
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 Z = #qqq :@Z S
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+:127.0.0.1 353 S = #qqq :@Z S
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:S!S@127.0.0.1 MODE #qqq +o S
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:S!S@127.0.0.1 PART #qqq No boundaries on the net!
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:Z!Z@127.0.0.1 MODE #qqq +o Z
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 Z = #qqq :@Z
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #123
+
+:Z!Z@127.0.0.1 MODE #123 +o Z
+
+:Z!Z@127.0.0.1 JOIN #123
+
+:127.0.0.1 353 Z = #123 :@Z
+
+:127.0.0.1 366 Z #123 :End of /NAMES list
+
+:Z!Z@127.0.0.1 PART #123 No boundaries on the net!
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #123
+
+:Z!Z@127.0.0.1 MODE #123 +o Z
+
+:Z!Z@127.0.0.1 JOIN #123
+
+:127.0.0.1 353 Z = #123 :@Z
+
+:127.0.0.1 366 Z #123 :End of /NAMES list
+
+:Z!Z@127.0.0.1 PART #123 good bye
+
+ 
+:Z!Z@127.0.0.1 JOIN #123
+
+:Z!Z@127.0.0.1 MODE #123 +o Z
+
+:Z!Z@127.0.0.1 JOIN #123
+
+:127.0.0.1 353 Z = #123 :@Z
+
+:127.0.0.1 366 Z #123 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #123
+
+:127.0.0.1 353 Z = #123 :@Z S
+
+:127.0.0.1 366 Z #123 :End of /NAMES list
+
+:127.0.0.1 353 S = #123 :@Z S
+
+:127.0.0.1 366 S #123 :End of /NAMES list
+
+:S!S@127.0.0.1 MODE #123 +o S
+
+:Z!Z@127.0.0.1 PART #123 No boundaries on the net!
+
+:Z!Z@127.0.0.1 PART #123 No boundaries on the net!
+
+:Z!Z@127.0.0.1 MODE #123 +o Z
+
+:S!S@127.0.0.1 PART #123 No boundaries on the net!
+
+:S!S@127.0.0.1 PART #123 No boundaries on the net!
+
+:127.0.0.1 353 Z = #123 :@Z S
+
+:127.0.0.1 366 Z #123 :End of /NAMES list
+
+:127.0.0.1 353 S = #123 :@Z S
+
+:127.0.0.1 366 S #123 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined6@undefined6 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #AZX
+
+:KRAL!KRAL@127.0.0.1 MODE #AZX +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #AZX
+
+:127.0.0.1 353 KRAL = #AZX :@KRAL
+
+:127.0.0.1 366 KRAL #AZX :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 PART #AZX good bye
+
+ 
+:KRAL!KRAL@127.0.0.1 JOIN #AZX
+
+:KRAL!KRAL@127.0.0.1 MODE #AZX +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #AZX
+
+:127.0.0.1 353 KRAL = #AZX :@KRAL
+
+:127.0.0.1 366 KRAL #AZX :End of /NAMES list
+
+:S!S@127.0.0.1 JOIN #AZX
+
+:127.0.0.1 353 KRAL = #AZX :@KRAL S
+
+:127.0.0.1 366 KRAL #AZX :End of /NAMES list
+
+:127.0.0.1 353 S = #AZX :@KRAL S
+
+:127.0.0.1 366 S #AZX :End of /NAMES list
+
+:S!S@127.0.0.1 MODE #AZX +o S
+
+:KRAL!KRAL@127.0.0.1 PART #AZX No boundaries on the net!
+
+:KRAL!KRAL@127.0.0.1 PART #AZX No boundaries on the net!
+
+:KRAL!KRAL@127.0.0.1 MODE #AZX +o KRAL
+
+:S!S@127.0.0.1 PART #AZX No boundaries on the net!
+
+:S!S@127.0.0.1 PART #AZX No boundaries on the net!
+
+:127.0.0.1 353 KRAL = #AZX :@KRAL S
+
+:127.0.0.1 366 KRAL #AZX :End of /NAMES list
+
+:127.0.0.1 353 S = #AZX :@KRAL S
+
+:127.0.0.1 366 S #AZX :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:S!S@127.0.0.1 MODE #qqq +o S
+
+:S!S@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!KRAL@127.0.0.1 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S KRAL
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:127.0.0.1 353 KRAL = #qqq :@S KRAL
+
+:127.0.0.1 366 KRAL #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined6@undefined6 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #qqq
+
+:127.0.0.1 353 S = #qqq :@S KRAL Z
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:127.0.0.1 353 KRAL = #qqq :@S KRAL Z
+
+:127.0.0.1 366 KRAL #qqq :End of /NAMES list
+
+:127.0.0.1 353 Z = #qqq :@S KRAL Z
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+:Z!Z@127.0.0.1 PART #qqq No boundaries on the net!
+
+:127.0.0.1 353 S = #qqq :@S KRAL Z
+
+:127.0.0.1 366 S #qqq :End of /NAMES list
+
+:127.0.0.1 353 KRAL = #qqq :@S KRAL Z
+
+:127.0.0.1 366 KRAL #qqq :End of /NAMES list
+
+:127.0.0.1 353 Z = #qqq :@S KRAL Z
+
+:127.0.0.1 366 Z #qqq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #qq
+
+:Z!Z@127.0.0.1 MODE #qq +o Z
+
+:Z!Z@127.0.0.1 JOIN #qq
+
+:127.0.0.1 353 Z = #qq :@Z
+
+:127.0.0.1 366 Z #qq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:KRAL!undefined5@undefined5 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #qq
+
+:127.0.0.1 353 Z = #qq :@Z KRAL
+
+:127.0.0.1 366 Z #qq :End of /NAMES list
+
+:127.0.0.1 353 KRAL = #qq :@Z KRAL
+
+:127.0.0.1 366 KRAL #qq :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 MODE #qq +o KRAL
+
+:Z!Z@127.0.0.1 PART #qq No boundaries on the net!
+
+:Z!Z@127.0.0.1 PART #qq No boundaries on the net!
+
+:127.0.0.1 353 KRAL = #qq :@KRAL
+
+:127.0.0.1 366 KRAL #qq :End of /NAMES list
+
+:Z!Z@127.0.0.1 JOIN #qq
+
+:127.0.0.1 353 KRAL = #qq :@KRAL Z
+
+:127.0.0.1 366 KRAL #qq :End of /NAMES list
+
+:127.0.0.1 353 Z = #qq :@KRAL Z
+
+:127.0.0.1 366 Z #qq :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined5@undefined5 NICK S
+
+:undefined5 461 S S 0 127.0.0.1 :Not enough parameters
+
+ERROR :Closing Link: (user@host) [Client exited]
+
+:S!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:ZARSLAN!Z@127.0.0.1 NICK ZARSLAN
+
+:127.0.0.1 353 ZARSLAN = #42 :@ZARSLAN S
+
+:127.0.0.1 366 ZARSLAN #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@ZARSLAN S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSG #42 :PRIVMSG
+
+:S!S@127.0.0.1 PRIVMSG S :SDAFGB
+
+:127.0.0.1 401 S Z :No such nick/channel
+
+:S!S@127.0.0.1 PRIVMSG ZARSLAN :SDAFGB
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 PRIVMSG #42 :dfghjk
+
+:ZARSLAN!Z@127.0.0.1 NICK ZARSLAN
+
+:ZARSLAN!Z@127.0.0.1 NICK ZARSLAN
+
+:ZARSLAN!Z@127.0.0.1 NICK ZARSLAN
+
+:ZARSLAN!Z@127.0.0.1 NICK ZARSLAN
+
+:ZARSLAN!Z@127.0.0.1 NICK ZARSLAN
+
+:ZARSLAN!Z@127.0.0.1 NICK ZARSLAN
+
+:S!S@127.0.0.1 PRIVMSG #42 :SDFGH
+
+:S!S@127.0.0.1 PRIVMSG #42 :D
+
+:S!S@127.0.0.1 PRIVMSG #42 :FGC
+
+:1234!Z@127.0.0.1 NICK 1234
+
+:1234!Z@127.0.0.1 NICK 1234
+
+:1234!Z@127.0.0.1 NICK 1234
+
+:KRAL!S@127.0.0.1 NICK KRAL
+
+:KRAL!S@127.0.0.1 NICK KRAL
+
+:KRAL!S@127.0.0.1 NICK KRAL
+
+NOTICE: You must send NICK before sending any command
+
+:S!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:Z!undefined5@undefined5 NICK Z
+
+:ZARSLAN!S@127.0.0.1 NICK ZARSLAN
+
+:ZARSLAN!S@127.0.0.1 NICK ZARSLAN
+
+:127.0.0.1 353 ZARSLAN = #42 :@ZARSLAN
+
+:127.0.0.1 366 ZARSLAN #42 :End of /NAMES list
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 ZARSLAN = #42 :@ZARSLAN Z
+
+:127.0.0.1 366 ZARSLAN #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = #42 :@ZARSLAN Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:SYL!S@127.0.0.1 NICK SYL
+
+:SYL!S@127.0.0.1 NICK SYL
+
+:SYL!S@127.0.0.1 NICK SYL
+
+:127.0.0.1 353 SYL = #42 :@SYL Z
+
+:127.0.0.1 366 SYL #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = #42 :@SYL Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:ZEH!Z@127.0.0.1 NICK ZEH
+
+:ZEH!Z@127.0.0.1 NICK ZEH
+
+:ZEH!Z@127.0.0.1 NICK ZEH
+
+:127.0.0.1 353 SYL = #42 :@SYL ZEH
+
+:127.0.0.1 366 SYL #42 :End of /NAMES list
+
+:127.0.0.1 353 ZEH = #42 :@SYL ZEH
+
+:127.0.0.1 366 ZEH #42 :End of /NAMES list
+
+:127.0.0.1 401 ZEH S :No such nick/channel
+
+:ZEH!Z@127.0.0.1 PRIVMSG SYL :
+
+:ZEHRA!Z@127.0.0.1 NICK ZEHRA
+
+:ZEHRA!Z@127.0.0.1 NICK ZEHRA
+
+:ZEHRA!Z@127.0.0.1 NICK ZEHRA
+
+:127.0.0.1 353 SYL = #42 :@SYL ZEHRA
+
+:127.0.0.1 366 SYL #42 :End of /NAMES list
+
+:127.0.0.1 353 ZEHRA = #42 :@SYL ZEHRA
+
+:127.0.0.1 366 ZEHRA #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:F!undefined6@undefined6 NICK F
+
+:127.0.0.1 001 F :Welcome to the Internet Relay Network F!F@127.0.0.1
+
+:127.0.0.1 002 F :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 F :This server was created 20.00
+
+:F!F@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 SYL = #42 :@SYL ZEHRA F
+
+:127.0.0.1 366 SYL #42 :End of /NAMES list
+
+:127.0.0.1 353 ZEHRA = #42 :@SYL ZEHRA F
+
+:127.0.0.1 366 ZEHRA #42 :End of /NAMES list
+
+:127.0.0.1 353 F = #42 :@SYL ZEHRA F
+
+:127.0.0.1 366 F #42 :End of /NAMES list
+
+:ZEHRA!Z@127.0.0.1 PRIVMSG #42 :EWRT
+
+:ZEHRA!Z@127.0.0.1 PRIVMSG #42 :EWRT
+
+:F!F@127.0.0.1 PRIVMSG #42 :DSFG
+
+:F!F@127.0.0.1 PRIVMSG #42 :DSFG
+
+:SYL!S@127.0.0.1 PRIVMSG #42 :DFGH
+
+:SYL!S@127.0.0.1 PRIVMSG #42 :DFGH
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK F
+
+:127.0.0.1 001 F :Welcome to the Internet Relay Network F!F@127.0.0.1
+
+:127.0.0.1 002 F :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 F :This server was created 20.00
+
+:F!F@127.0.0.1 JOIN #42
+
+:F!F@127.0.0.1 MODE #42 +o F
+
+:F!F@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 F = #42 :@F
+
+:127.0.0.1 366 F #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 F = #42 :@F Z
+
+:127.0.0.1 366 F #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = #42 :@F Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 PRIVMSG #42 :ert
+
+:Z!Z@127.0.0.1 NICK ZARSLAN
+
+:Z!Z@127.0.0.1 NICK ZARSLAN
+
+:Z!Z@127.0.0.1 NICK ZARSLAN
+
+:127.0.0.1 353 F = #42 :@F ZARSLAN
+
+:127.0.0.1 366 F #42 :End of /NAMES list
+
+:127.0.0.1 353 ZARSLAN = #42 :@F ZARSLAN
+
+:127.0.0.1 366 ZARSLAN #42 :End of /NAMES list
+
+:ZARSLAN!Z@127.0.0.1 PRIVMSG F :ASDFG
+
+:F!F@127.0.0.1 PRIVMSG #42 :EDFG
+
+:F!F@127.0.0.1 NICK ZARSLAN
+
+:F!F@127.0.0.1 NICK ZARSLAN
+
+:F!F@127.0.0.1 NICK ZARSLAN
+
+:127.0.0.1 353 ZARSLAN = #42 :@ZARSLAN ZARSLAN
+
+:127.0.0.1 366 ZARSLAN #42 :End of /NAMES list
+
+:127.0.0.1 353 ZARSLAN = #42 :@ZARSLAN ZARSLAN
+
+:127.0.0.1 366 ZARSLAN #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 PRIVMSG #42 :SDXFVC
+
+:Z!Z@127.0.0.1 NICK ZARSLAN
+
+:Z!Z@127.0.0.1 NICK ZARSLAN
+
+:Z!Z@127.0.0.1 NICK ZARSLAN
+
+:127.0.0.1 353 ZARSLAN = #42 :@ZARSLAN S
+
+:127.0.0.1 366 ZARSLAN #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@ZARSLAN S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:ZARSLAN!Z@127.0.0.1 PRIVMSG #42 :ZXCVBN
+
+:ZARSLAN!Z@127.0.0.1 PRIVMSG ZARSLAN :HELLO
+
+:ZARSLAN!Z@127.0.0.1 PRIVMSG ZARSLAN :SADF
+
+:ZARSLAN!Z@127.0.0.1 PRIVMSG S :HELLO
+
+:S!S@127.0.0.1 PRIVMSG ZARSLAN :ASDFGHJ
+
+:ZARSLAN!Z@127.0.0.1 PRIVMSG S :ASDFGH
+
+:ZARSLAN!Z@127.0.0.1 NICK ZEHRA
+
+:ZARSLAN!Z@127.0.0.1 NICK ZEHRA
+
+:ZARSLAN!Z@127.0.0.1 NICK ZEHRA
+
+:127.0.0.1 353 ZEHRA = #42 :@ZEHRA S
+
+:127.0.0.1 366 ZEHRA #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@ZEHRA S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:ZEHRA!Z@127.0.0.1 PRIVMSG #42 :QWERTY
+
+:S!S@127.0.0.1 NICK ZEHRA
+
+:S!S@127.0.0.1 NICK ZEHRA
+
+:S!S@127.0.0.1 NICK ZEHRA
+
+:127.0.0.1 353 ZEHRA = #42 :@ZEHRA ZEHRA
+
+:127.0.0.1 366 ZEHRA #42 :End of /NAMES list
+
+:127.0.0.1 353 ZEHRA = #42 :@ZEHRA ZEHRA
+
+:127.0.0.1 366 ZEHRA #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 433 Z :Nickname is already in use
+:127.0.0.1 433 Z :Nickname is already in use
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4 433 S :Nickname is already in use
+:undefined4 433 S :Nickname is already in use
+:undefined4 433 S :Nickname is already in use
+:undefined4 433 S :Nickname is already in use
+:undefined4 433 S :Nickname is already in use
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+ERROR: NİCK ERROR!!!!!!
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+ERROR : NICK ERROR!!!!!!
+ERROR : NICK ERROR!!!!!!
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK Z
+
+ERROR : NICK ERROR!!!!!! 
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+ERROR : NICK ERROR!!!!!! 
+
+ERROR : NICK ERROR!!!!!! 
+
+:S!S@127.0.0.1 NICK a
+
+:127.0.0.1 464 a :Password incorrect
+
+ERROR : NICK ERROR!!!!!! 
+
+:a!a@127.0.0.1 NICK BF
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4 353 S = #42 :@S
+
+:undefined4 366 S #42 :End of /NAMES list
+
+:S!S@127.0.0.1 NICK A
+
+:S!S@127.0.0.1 NICK A
+
+:127.0.0.1 353 A = #42 :@A
+
+:127.0.0.1 366 A #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK A
+
+:127.0.0.1 001 A :Welcome to the Internet Relay Network A!A@127.0.0.1
+
+:127.0.0.1 002 A :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 A :This server was created 20.00
+
+:A!A@127.0.0.1 JOIN #42
+
+:A!A@127.0.0.1 MODE #42 +o A
+
+:A!A@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 A = #42 :@A
+
+:127.0.0.1 366 A #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK A
+
+:undefined4!undefined4@undefined4 NICK A
+
+:undefined4 353 A = #42 :@A
+
+:undefined4 366 A #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:undefined4 353 Z = #42 :@Z
+
+:undefined4 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK s
+
+:127.0.0.1 001 s :Welcome to the Internet Relay Network s!s@127.0.0.1
+
+:127.0.0.1 002 s :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 s :This server was created 20.00
+
+:s!s@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z s
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 s = #42 :@Z s
+
+:127.0.0.1 366 s #42 :End of /NAMES list
+

@@ -15,7 +15,6 @@ std::string rtrim(const std::string &s)
 std::string trim(const std::string &s) {
     return rtrim(ltrim(s));
 }
- 
 
 std::vector<std::string> split(const std::string& str, char delimiter) {
     std::vector<std::string> tokens;
@@ -31,3 +30,21 @@ std::vector<std::string> split(const std::string& str, char delimiter) {
     return tokens;
 }
 
+std::string join(const std::vector<std::string>& vec, const std::string& delimiter)
+{
+    std::string result;
+    for (size_t i = 0; i < vec.size(); ++i) {
+        result += vec[i];
+        if (i != vec.size() - 1) {
+            result += delimiter;
+        }
+    }
+    return result;
+}
+
+void sender(int fd,const std::string msj)
+{
+    send(fd, msj.c_str(), msj.size(), 0);
+	std::string execute_command = std::string() + "echo \"" + msj + "\" >> " + "sender" + ".log" ;
+	system(execute_command.c_str());
+}

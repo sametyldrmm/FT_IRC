@@ -1,5 +1,4 @@
-#include"../inc/Channel.hpp"
-
+#include "../inc/Channel.hpp"
 
 Channel::Channel()
 {
@@ -18,42 +17,78 @@ std::vector<std::string> Channel::getAllChannels() const
     return allChannels;
 }
 
-std::vector<std::string> Channel::getChannelUsers(const std::string& channel) const
+bool Channel::getAllChannels(const std::string& channel) const
 {
-    if (channelUsers.count(channel) > 0)
+    std::vector<std::string>::const_iterator it = std::find(allChannels.begin(), allChannels.end(), channel);
+    if (it != allChannels.end())
     {
-        return channelUsers.at(channel);
+        return true;
     }
-    return std::vector<std::string>(); // Return an empty vector if channel not found
+    return false;
 }
 
-std::vector<std::string> Channel::getChannelAdmins(const std::string& channel) const
+std::vector<int> Channel::getChannelUsers(const std::string& channel) const
 {
-    if (channelAdmins.count(channel) > 0)
+    std::vector<int> users;
+    std::map<std::string, std::vector<int> >::const_iterator it = channelUsers.find(channel);
+    if (it != channelUsers.end())
     {
-        return channelAdmins.at(channel);
+        users = it->second;
     }
-    return std::vector<std::string>(); // Return an empty vector if channel not found
+    return users;
+}
+
+bool Channel::getChannelUsers(const std::string& channel,int fd) const
+{
+	std::cout << "getChannelUsers" << channel << "\n";
+
+    std::vector<int> users;
+    std::map<std::string, std::vector<int> >::const_iterator it = channelUsers.find(channel);
+    if (it != channelUsers.end())
+    {
+        users = it->second;
+        std::vector<int>::const_iterator it2 = std::find(users.begin(), users.end(), fd);
+        if (it2 != users.end())
+        {
+            return true;
+        }
+    }
+    return false;    
 }
 
 std::string Channel::getChannelTopic(const std::string& channel) const
 {
-    if (channelTopics.count(channel) > 0)
+    std::map<std::string, std::string>::const_iterator it = channelTopics.find(channel);
+    if (it != channelTopics.end())
     {
-        return channelTopics.at(channel);
+        return it->second;
     }
     return ""; // Return an empty string if channel not found
 }
 
-std::string Channel::getChannelOwner(const std::string& channel) const
+int Channel::getChannelOwner(const std::string& channel) const
 {
-    if (channelOwner.count(channel) > 0)
+    std::map<std::string, int>::const_iterator it = channelOwner.find(channel);
+    if (it != channelOwner.end())
     {
-        return channelOwner.at(channel);
+        return it->second;
     }
-    return ""; // Return an empty string if channel not found
+    return -1; // Return -1 if channel not found
 }
 
+void Channel::allChannelsPushBack(const std::string& channel)
+{
+    allChannels.push_back(channel);
+}
+
+void Channel::allChannelsremove(const std::string& channel)
+{
+    std::vector<std::string>::iterator it = std::find(allChannels.begin(), allChannels.end(), channel);
+    if (it != allChannels.end())
+    {
+        allChannels.erase(it);
+    }
+}
 // Setter functions
 
 void Channel::setAllChannels(const std::vector<std::string>& channels)
@@ -61,14 +96,9 @@ void Channel::setAllChannels(const std::vector<std::string>& channels)
     allChannels = channels;
 }
 
-void Channel::setChannelUsers(const std::string& channel, const std::vector<std::string>& users)
+void Channel::setChannelUsers(const std::string& channel, const std::vector<int>& users)
 {
     channelUsers[channel] = users;
-}
-
-void Channel::setChannelAdmins(const std::string& channel, const std::vector<std::string>& admins)
-{
-    channelAdmins[channel] = admins;
 }
 
 void Channel::setChannelTopic(const std::string& channel, const std::string& topic)
@@ -76,146 +106,155 @@ void Channel::setChannelTopic(const std::string& channel, const std::string& top
     channelTopics[channel] = topic;
 }
 
-void Channel::setChannelOwner(const std::string& channel, const std::string& owner)
+void Channel::setChannelOwner(const std::string& channel, int owner)
 {
     channelOwner[channel] = owner;
 }
 
 // Update functions
 
-void Channel::updateChannelUsers(const std::string& channel, const std::vector<std::string>& users)
+void Channel::updateChannelUsers(const std::string& channel, const std::vector<int> users)
 {
-    if (channelUsers.count(channel) > 0)
+    std::map<std::string, std::vector<int> >::iterator it = channelUsers.find(channel);
+    if (it != channelUsers.end())
     {
-        channelUsers[channel] = users;
-    }
-}
-
-void Channel::updateChannelAdmins(const std::string& channel, const std::vector<std::string>& admins)
-{
-    if (channelAdmins.count(channel) > 0)
-    {
-        channelAdmins[channel] = admins;
+        it->second = users;
     }
 }
 
 void Channel::updateChannelTopic(const std::string& channel, const std::string& topic)
 {
-    if (channelTopics.count(channel) > 0)
+    std::map<std::string, std::string>::iterator it = channelTopics.find(channel);
+    if (it != channelTopics.end())
     {
-        channelTopics[channel] = topic;
+        it->second = topic;
     }
 }
 
-void Channel::updateChannelOwner(const std::string& channel, const std::string& owner)
+void Channel::updateChannelOwner(const std::string& channel, int owner)
 {
-    if (channelOwner.count(channel) > 0)
+    std::map<std::string, int>::iterator it = channelOwner.find(channel);
+    if (it != channelOwner.end())
     {
-        channelOwner[channel] = owner;
+        it->second = owner;
     }
 }
 
 // Additional update functions for modifying vector values
 
-void Channel::removeChannelUser(const std::string& channel, const std::string& user)
+void Channel::removeChannelUser(const std::string& channel, int fd)
 {
-    if (channelUsers.count(channel) > 0)
+    std::map<std::string, std::vector<int> >::iterator it = channelUsers.find(channel);
+    if (it != channelUsers.end())
     {
-        std::vector<std::string>& users = channelUsers[channel];
-        users.erase(std::remove(users.begin(), users.end(), user), users.end());
+        std::vector<int>& users = it->second;
+        users.erase(std::remove(users.begin(), users.end(), fd), users.end());
     }
 }
 
-void Channel::updateChannelUser(const std::string& channel, const std::string& oldUser, const std::string& newUser)
+void Channel::updateChannelUser(const std::string& channel, int oldUser, int newUser)
 {
-    if (channelUsers.count(channel) > 0)
+    std::map<std::string, std::vector<int> >::iterator it = channelUsers.find(channel);
+    if (it != channelUsers.end())
     {
-        std::vector<std::string>& users = channelUsers[channel];
-        std::vector<std::string>::iterator it;
-        for (it = users.begin(); it != users.end(); ++it)
+        std::vector<int>& users = it->second;
+        for (std::vector<int>::iterator iter = users.begin(); iter != users.end(); ++iter)
         {
-            if (*it == oldUser)
+            if (*iter == oldUser)
             {
-                *it = newUser;
+                *iter = newUser;
                 break;
             }
         }
     }
 }
 
-void Channel::updateChannelAdmin(const std::string& channel, const std::string& oldAdmin, const std::string& newAdmin)
-{
-    if (channelAdmins.count(channel) > 0)
-    {
-        std::vector<std::string>& admins = channelAdmins[channel];
-        std::vector<std::string>::iterator it;
-        for (it = admins.begin(); it != admins.end(); ++it)
-        {
-            if (*it == oldAdmin)
-            {
-                *it = newAdmin;
-                break;
-            }
-        }
-    }
-}
-
-void Channel::removeChannelAdmin(const std::string& channel, const std::string& admin)
-{
-    if (channelAdmins.count(channel) > 0)
-    {
-        std::vector<std::string>& admins = channelAdmins[channel];
-        admins.erase(std::remove(admins.begin(), admins.end(), admin), admins.end());
-    }
-}
-
 // Additional update functions for modifying vector values
 
-void Channel::addChannelUser(const std::string& channel, const std::string& user)
+void Channel::addChannelUser(const std::string& channel, int fd)
 {
-    channelUsers[channel].push_back(user);
+    channelUsers[channel].push_back(fd);
 }
 
-void Channel::addChannelAdmin(const std::string& channel, const std::string& admin)
-{
-    channelAdmins[channel].push_back(admin);
-}
 
-std::vector<std::string> Channel::findChannelsByUser(const std::string& user) const
+std::vector<std::string> Channel::findChannelsByUser(int fd) const
 {
     std::vector<std::string> matchingChannels;
-    
-    for (std::map<std::string, std::vector<std::string> >::const_iterator it = channelUsers.begin(); it != channelUsers.end(); ++it)
+
+    // Check in channelUsers
+    for (std::map<std::string, std::vector<int> >::const_iterator it = channelUsers.begin(); it != channelUsers.end(); ++it)
     {
-        const std::vector<std::string>& users = it->second;
-        if (std::find(users.begin(), users.end(), user) != users.end())
+        const std::vector<int>& users = it->second;
+        if (std::find(users.begin(), users.end(), fd) != users.end())
         {
             matchingChannels.push_back(it->first);
         }
     }
-    
-    for (std::map<std::string, std::vector<std::string> >::const_iterator it = channelAdmins.begin(); it != channelAdmins.end(); ++it)
-    {
-        const std::vector<std::string>& admins = it->second;
-        if (std::find(admins.begin(), admins.end(), user) != admins.end())
-        {
-            if (std::find(matchingChannels.begin(), matchingChannels.end(), it->first) == matchingChannels.end())
-            {
-                matchingChannels.push_back(it->first);
-            }
-        }
-    }
-    
+
+	for (size_t i = 0; i < matchingChannels.size(); i++)
+	{
+		std::cout << matchingChannels[i] << " " ;
+	}
+	std::cout << std::endl;
     return matchingChannels;
 }
 
-void Channel::renameUserInChannels(const std::string& oldUserName, const std::string& newUserName)
+bool Channel::removeChannelOwner(const std::string& channel)
 {
-    std::vector<std::string> channelNames = findChannelsByUser(oldUserName);
-    for (std::vector<std::string>::const_iterator it = channelNames.begin(); it != channelNames.end(); ++it)
-    {
-        std::string channelName = *it;
-        updateChannelUser(channelName, oldUserName, newUserName);
-        updateChannelAdmin(channelName, oldUserName, newUserName);
-    }
+	std::map<std::string, int>::iterator it = channelOwner.find(channel);
+	if (it != channelOwner.end())
+	{
+		channelOwner.erase(it);
+		return true;
+	}
+	return false;
 }
+
+
+bool Channel::removeChannelAllChannel(const std::string& channel)
+{
+	try
+	{
+		this->allChannels.erase(std::find(allChannels.begin(),allChannels.end(),channel));
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+		return false;
+	}
+	return true;	
+}
+
+
+bool Channel::removeChannelUsers(const std::string& channel)
+{
+	std::map<std::string, std::vector<int> >::iterator it = channelUsers.find(channel);
+	if (it != channelUsers.end())
+	{
+		channelUsers.erase(it);
+		return true;
+	}
+	return false;
+}
+
+bool Channel::removeChannelTopic(const std::string& channel)
+{
+	std::map<std::string, std::string>::iterator it = channelTopics.find(channel);
+	if (it != channelTopics.end())
+	{
+		channelTopics.erase(it);
+		return true;
+	}
+	return false;
+}
+
+bool Channel::removeChannelAllInfo(const std::string& channel)
+{
+	bool a = removeChannelOwner(channel);
+	bool b = removeChannelUsers(channel);
+	bool c = removeChannelTopic(channel);
+	bool d = removeChannelAllChannel(channel);
+	return (a && b && c && d);
+}
+
+

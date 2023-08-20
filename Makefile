@@ -8,7 +8,7 @@ CFLAGS := -Wall -Wextra -Werror -std=c++98 -g
 TARGET := ft_irc
 
 # Kaynak dosyaları
-SOURCES := src/main.cpp src/server.cpp  src/getMessage.cpp src/utils.cpp src/users.cpp src/channel.cpp
+SOURCES := src/main.cpp src/server.cpp  src/getMessage.cpp src/utils.cpp src/users.cpp src/channel.cpp src/error.cpp
 
 # Nesne dosyaları
 OBJECTS := $(SOURCES:.cpp=.o)
