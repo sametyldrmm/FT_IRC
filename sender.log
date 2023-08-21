@@ -1975,3 +1975,1275 @@ NOTICE: You must send NICK before sending any command
 
 :127.0.0.1 366 s #42 :End of /NAMES list
 
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 NICK za
+
+:Z!Z@127.0.0.1 NICK za
+
+:127.0.0.1 353 za = #42 :@za
+
+:127.0.0.1 366 za #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 PRIVMSGKVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4 353 S = #42 :@S
+
+:undefined4 366 S #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSGBYE!
+
+:S!S@127.0.0.1 PRIVMSGBYE!
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 PRIVMSG KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:!@ MODE 42 +o 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:!@ MODE 42 +o 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S Z
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = #42 :@S Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:S!S@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:S!S@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:Z!Z@127.0.0.1 MODE 42 +o Z
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+NOTICE: You must send NICK before sending any command
+
+:!Z@ PRIVMSG #42 :DFGH
+
+NOTICE: You must send NICK before sending any command
+
+:!Z@ PRIVMSG #42 :DFGHJ
+
+NOTICE: You must send NICK before sending any command
+
+:!Z@ PRIVMSG #42 :SDFGHJ
+
+NOTICE: You must send NICK before sending any command
+
+:!Z@ PRIVMSG #42 :DFGHJ
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 S = #42 :@S Z
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:127.0.0.1 353 Z = #42 :@S Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:S!S@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:S!S@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:S!S@127.0.0.1 PART 42 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:S!S@127.0.0.1 MODE #42 +o S
+
+:Z!Z@127.0.0.1 PART 42 
+
+:Z!Z@127.0.0.1 PART  
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:!@ MODE #42 +o 
+
+:Z!Z@127.0.0.1 PART 42 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:!Z@ NICK Z
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:!@ MODE #42 +o 
+
+:Z!Z@127.0.0.1 PART 42 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:!@ NICK Z
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 QUIT ASD
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK Z
+
+:127.0.0.1 001 Z :Welcome to the Internet Relay Network Z!Z@127.0.0.1
+
+:127.0.0.1 002 Z :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 Z :This server was created 20.00
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:Z!Z@127.0.0.1 MODE #42 +o Z
+
+:Z!Z@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined5!undefined5@undefined5 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 Z = #42 :@Z S
+
+:127.0.0.1 366 Z #42 :End of /NAMES list
+
+:127.0.0.1 353 S = #42 :@Z S
+
+:127.0.0.1 366 S #42 :End of /NAMES list
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:Z!Z@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:KRAL!KRAL@127.0.0.1 MODE #42 +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 KRAL = #42 :@KRAL
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:!@ MODE #42 +o 
+
+:KRAL!KRAL@127.0.0.1 PART 42 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:KRAL!KRAL@127.0.0.1 MODE #42 +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 KRAL = #42 :@KRAL
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:!@ MODE #42 +o 
+
+:KRAL!KRAL@127.0.0.1 PART 42 
+
+NOTICE: You must send NICK before sending any command
+
+:!@ NICK KRAL
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:KRAL!KRAL@127.0.0.1 MODE #42 +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #42
+
+:127.0.0.1 353 KRAL = #42 :@KRAL
+
+:127.0.0.1 366 KRAL #42 :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 QUIT KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:!@ MODE #42 +o 
+
+:KRAL!KRAL@127.0.0.1 PART 42 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:!@ NICK KRAL
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #eeee
+
+:KRAL!KRAL@127.0.0.1 MODE #eeee +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #eeee
+
+:127.0.0.1 353 KRAL = #eeee :@KRAL
+
+:127.0.0.1 366 KRAL #eeee :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #eeee
+
+:KRAL!KRAL@127.0.0.1 MODE #eeee +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #eeee
+
+:127.0.0.1 353 KRAL = #eeee :@KRAL
+
+:127.0.0.1 366 KRAL #eeee :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+:undefined4 353 KRAL = #eeee :@KRAL
+
+:undefined4 366 KRAL #eeee :End of /NAMES list
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:127.0.0.1 353 KRAL = #eeee :@KRAL
+
+:127.0.0.1 366 KRAL #eeee :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #eeee
+
+:KRAL!KRAL@127.0.0.1 MODE #eeee +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #eeee
+
+:127.0.0.1 353 KRAL = #eeee :@KRAL
+
+:127.0.0.1 366 KRAL #eeee :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+:!KRAL@127.0.0.1 NICK KRAL
+
+:!KRAL@127.0.0.1 NICK KRAL
+
+:127.0.0.1 353 KRAL = #eeee :@KRAL
+
+:127.0.0.1 366 KRAL #eeee :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!KRAL@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:KRAL!KRAL@127.0.0.1 JOIN #eeee
+
+:KRAL!KRAL@127.0.0.1 MODE #eeee +o KRAL
+
+:KRAL!KRAL@127.0.0.1 JOIN #eeee
+
+:127.0.0.1 353 KRAL = #eeee :@KRAL
+
+:127.0.0.1 366 KRAL #eeee :End of /NAMES list
+
+:KRAL!KRAL@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #sdf
+
+:S!S@127.0.0.1 MODE #sdf +o S
+
+:S!S@127.0.0.1 JOIN #sdf
+
+:127.0.0.1 353 S = #sdf :@S
+
+:127.0.0.1 366 S #sdf :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #sdf
+
+:S!S@127.0.0.1 MODE #sdf +o S
+
+:S!S@127.0.0.1 JOIN #sdf
+
+:127.0.0.1 353 S = #sdf :@S
+
+:127.0.0.1 366 S #sdf :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #sdf
+
+:S!S@127.0.0.1 MODE #sdf +o S
+
+:S!S@127.0.0.1 JOIN #sdf
+
+:127.0.0.1 353 S = #sdf :@S
+
+:127.0.0.1 366 S #sdf :End of /NAMES list
+
+:S!S@127.0.0.1 PART #sdf good bye
+
+ 
+:S!S@127.0.0.1 PRIVMSG :Changing server...
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #sdf
+
+:S!S@127.0.0.1 MODE #sdf +o S
+
+:S!S@127.0.0.1 JOIN #sdf
+
+:127.0.0.1 353 S = #sdf :@S
+
+:127.0.0.1 366 S #sdf :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:S!S@127.0.0.1 PART 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #HG
+
+:S!S@127.0.0.1 MODE #HG +o S
+
+:S!S@127.0.0.1 JOIN #HG
+
+:127.0.0.1 353 S = #HG :@S
+
+:127.0.0.1 366 S #HG :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4 353 S = #HG :@S
+
+:undefined4 366 S #HG :End of /NAMES list
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qw
+
+:S!S@127.0.0.1 MODE #qw +o S
+
+:S!S@127.0.0.1 JOIN #qw
+
+:127.0.0.1 353 S = #qw :@S
+
+:127.0.0.1 366 S #qw :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4!undefined4@undefined4 NICK S
+
+:undefined4 353 S = #HG :@S
+
+:undefined4 366 S #HG :End of /NAMES list
+
+:undefined4 353 S = #qw :@S
+
+:undefined4 366 S #qw :End of /NAMES list
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qqqq
+
+:S!S@127.0.0.1 MODE #qqqq +o S
+
+:S!S@127.0.0.1 JOIN #qqqq
+
+:127.0.0.1 353 S = #qqqq :@S
+
+:127.0.0.1 366 S #qqqq :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #asd
+
+:S!S@127.0.0.1 MODE #asd +o S
+
+:S!S@127.0.0.1 JOIN #asd
+
+:127.0.0.1 353 S = #asd :@S
+
+:127.0.0.1 366 S #asd :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:S!S@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #qw
+
+:S!S@127.0.0.1 MODE #qw +o S
+
+:S!S@127.0.0.1 JOIN #qw
+
+:127.0.0.1 353 S = #qw :@S
+
+:127.0.0.1 366 S #qw :End of /NAMES list
+
+:S!S@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+:S!S@127.0.0.1 PRIVMSG :KVIrc 5.0.0 Aria http://www.kvirc.net/
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #zxc
+
+:S!S@127.0.0.1 MODE #zxc +o S
+
+:S!S@127.0.0.1 JOIN #zxc
+
+:127.0.0.1 353 S = #zxc :@S
+
+:127.0.0.1 366 S #zxc :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #zxc
+
+:S!S@127.0.0.1 MODE #zxc +o S
+
+:S!S@127.0.0.1 JOIN #zxc
+
+:127.0.0.1 353 S = #zxc :@S
+
+:127.0.0.1 366 S #zxc :End of /NAMES list
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #zxc
+
+:S!S@127.0.0.1 MODE #zxc +o S
+
+:S!S@127.0.0.1 JOIN #zxc
+
+:127.0.0.1 353 S = #zxc :@S
+
+:127.0.0.1 366 S #zxc :End of /NAMES list
+
+:!@ MODE #zxc +o 
+
+:S!S@127.0.0.1 PART zxc 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+:S!S@127.0.0.1 JOIN #asd
+
+:S!S@127.0.0.1 MODE #asd +o S
+
+:S!S@127.0.0.1 JOIN #asd
+
+:127.0.0.1 353 S = #asd :@S
+
+:127.0.0.1 366 S #asd :End of /NAMES list
+
+:!@ MODE #asd +o 
+
+:S!S@127.0.0.1 PART asd 
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK S
+
+:127.0.0.1 001 S :Welcome to the Internet Relay Network S!S@127.0.0.1
+
+:127.0.0.1 002 S :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 S :This server was created 20.00
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4 432 undefined4 KRAŞ :Erroneus nickname
+
+:undefined4!undefined4@undefined4 NICK syildiri
+
+:undefined4 432 syildiri SYİLDİRİ :Erroneus nickname
+
+:syildiri!undefined4@undefined4 NICK syildiri|2
+
+:undefined4 432 syildiri|2 SYİLDİRİ :Erroneus nickname
+
+:syildiri|2!undefined4@undefined4 NICK syildiri|3
+
+:undefined4 432 syildiri|3 SYİLDİRİ :Erroneus nickname
+
+:syildiri|3!undefined4@undefined4 NICK syildiri|4
+
+:undefined4 432 syildiri|4 SYİLDİRİ :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİR1 :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİR7 :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİR3 :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİR2 :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİRİ :Erroneus nickname
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4 432 undefined4 SYİLDİRİ :Erroneus nickname
+
+:undefined4!undefined4@undefined4 NICK syildiri
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:k1m30s07.42istanbul.com.tr 451 undefined4 :You have not registered
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4 432 undefined4 syildiri
+USER syildiri 0 127.0.0.1 :11,8Samet Yildirim :Erroneus nickname
+
+:undefined4!undefined4@undefined4 NICK syildiri|2
+
+ERROR :You must send USER before sending any command
+
+:k1m30s07.42istanbul.com.tr 451 undefined4 :You have not registered
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4 432 undefined4 syildiri
+USER syildiri 0 127.0.0.1 :11,8Samet :Erroneus nickname
+
+:undefined4!undefined4@undefined4 NICK syildiri|2
+
+:undefined4 432 syildiri|2 SYİLDİRİ :Erroneus nickname
+
+:syildiri|2!undefined4@undefined4 NICK syildiri|3
+
+:undefined4 432 syildiri|3 SYİLDİRİ4 :Erroneus nickname
+
+:syildiri|3!undefined4@undefined4 NICK syildiri|4
+
+:undefined4 432 syildiri|4 SYİLDİRİ411 :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİR0 :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİR2 :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİR9 :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİR2 :Erroneus nickname
+
+:undefined4 432 syildiri|4 SYİLDİRAS :Erroneus nickname
+
+:syildiri|4!undefined4@undefined4 NICK ASDASDA
+
+ERROR : NICK ERROR!!!!!! 
+
+ERROR : NICK ERROR!!!!!! 
+
+ERROR : NICK ERROR!!!!!! 
+
+ERROR : NICK ERROR!!!!!! 
+
+:k1m30s07.42istanbul.com.tr 451 undefined4 :You have not registered
+
+:k1m30s07.42istanbul.com.tr 451 undefined5 :You have not registered
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!syildiri@127.0.0.1 NICK KRAL
+
+:127.0.0.1 001 KRAL :Welcome to the Internet Relay Network KRAL!syildiri@127.0.0.1
+
+:127.0.0.1 002 KRAL :Your host is 127.0.0.1, running version v1.0.0
+
+:127.0.0.1 003 KRAL :This server was created 20.00
+
+:k1m30s07.42istanbul.com.tr 451 undefined4 :You have not registered
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4 432 undefined4 syildiri
+USER syildiri 0 127.0.0.1 :11,8Samet :Erroneus nickname
+
+:undefined4!undefined4@undefined4 NICK syildiri|2
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+NOTICE: You must send NICK before sending any command
+
+:undefined4!undefined4@undefined4 NICK KRAL
+
+ERROR :You must send USER before sending any command
+
+ERROR :You must send USER before sending any command
+
+ERROR :You must send USER before sending any command
+
+ERROR :You must send USER before sending any command
+
+ERROR :You must send USER before sending any command
+
+ERROR :You must send USER before sending any command
+
+ERROR :You must send USER before sending any command
+
+NOTICE: You must send NICK before sending any command
+

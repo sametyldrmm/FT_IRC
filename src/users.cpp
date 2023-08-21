@@ -248,3 +248,54 @@ std::string Users::getPrefix(const int &fd) const
 {
     return ":" + getNickname(fd) + "!" + getUsername(fd) + "@" + getHostname(fd);
 }
+
+
+void Users::removeUserAllInfo(int fd)
+{
+	std::map<int, std::string>::iterator it = nickname.find(fd);
+	if (it != nickname.end())
+	{
+		nickname.erase(it);
+	}
+	it = hostname.find(fd);
+	if (it != hostname.end())
+	{
+		hostname.erase(it);
+	}
+	it = realname.find(fd);
+	if (it != realname.end())
+	{
+		realname.erase(it);
+	}
+	std::map<int, bool>::iterator it2 = usersAuth.find(fd);
+	if (it2 != usersAuth.end())
+	{
+		usersAuth.erase(it2);
+	}
+	std::map<int, UsersAuth>::iterator it3 = usersAuthStruct.find(fd);
+	if (it3 != usersAuthStruct.end())
+	{
+		usersAuthStruct.erase(it3);
+	}
+	std::map<int, bool>::iterator it4 = usersWelcomeMessage.find(fd);
+	if (it4 != usersWelcomeMessage.end())
+	{
+		usersWelcomeMessage.erase(it4);
+	}
+	std::map<int, int>::iterator it5 = usersMod.find(fd);
+	if (it5 != usersMod.end())
+	{
+		usersMod.erase(it5);
+	}
+	std::vector<int>::iterator it6 = std::find(allUsersFd.begin(), allUsersFd.end(), fd);
+	if (it6 != allUsersFd.end())
+	{
+		allUsersFd.erase(it6);
+	}
+
+	std::map<int, std::string>::iterator it7 = this->username.find(fd);
+	if (it7 != this->username.end())
+	{
+		this->username.erase(it7);
+	}
+}

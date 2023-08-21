@@ -168,6 +168,11 @@ void Server::addClientToPolling(int clientSocket)
     std::string undefined = std::string("undefined") +  IntToString(newClientPollFd.fd);
     users.createUser(newClientPollFd.fd,undefined,undefined,undefined,undefined);
 	pollFds.push_back(newClientPollFd);
+	// NOT REGİSTERED
+	static int i = 0;
+	// if(i++ != 0)
+	// 	sender(clientSocket, ERR_NOTREGISTERED(this->hostName,undefined) + "\r\n") ;
+
 }
 
 void Server::handleClientSocket(int clientSocket)
@@ -322,4 +327,55 @@ void Server::channelAllChangeUserInfoPush(int fd, std::string message)
 		channelChangeUserInfoPush(fd, userChannels[i], message);
 		std::cout << "channel name" << userChannels[i] << " ";
 	}
+}
+
+void Server::quitAll(int fd)
+{
+	std::vector<std::string> userChannels = this->channels.findChannelsByUser(fd);
+
+	for (int i = 0; i < (int)userChannels.size() ; i++)
+	{
+		if (userChannels[i].size() == 1)
+		{
+			this->channels.removeChannelAllInfo(userChannels[i]);
+
+			std::string server_msg = this->users.getPrefix(fd) + " PART " + userChannels[i] + " " + "\r\n";
+            sender(fd, server_msg);
+			continue;
+		}
+		if (this->channels.getChannelOwner(userChannels[i]) == fd)
+		{
+			std::vector<int> users = this->channels.getChannelUsers(userChannels[i]);
+			int temp_fd = users[fd == users[0]];
+			this->channels.updateChannelOwner(userChannels[i] , users[fd == users[0]]);
+			sender(fd, (this->users.getPrefix(temp_fd) + " MODE #" + userChannels[i] + " +o " + this->users.getNickname(temp_fd) + "\r\n"));
+
+			std::vector<int> channelUsers = this->channels.getChannelUsers(userChannels[i]);
+            for (int i = 0; i < (int)channelUsers.size(); i++)
+            {
+                std::string server_msg = this->users.getPrefix(fd) + " PART " + userChannels[i] + " " + "\r\n";
+                sender(channelUsers[i], server_msg);
+            }
+
+			this->channels.removeChannelUser(userChannels[i], fd);
+			this->users.removeUserAllInfo(fd);
+			continue;
+		}
+		else
+		{
+			this->channels.removeChannelUser(userChannels[i], fd);
+
+						std::vector<int> channelUsers = this->channels.getChannelUsers(userChannels[i]);
+            for (int i = 0; i < (int)channelUsers.size(); i++)
+            {
+                std::string server_msg = this->users.getPrefix(fd) + " PART " + userChannels[i] + " " + "\r\n";
+                sender(channelUsers[i], server_msg);
+            }
+
+			this->users.removeUserAllInfo(fd);
+			continue;
+		}
+	}
+
+	this->users.removeUserAllInfo(fd);
 }

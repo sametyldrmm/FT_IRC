@@ -32,11 +32,13 @@ public:
 	void channelAllChangeUserInfoPush(int fd, std::string message);
 	void channelChangeUserInfoPush(int fd, std::string channelName, std::string message);
 
+	void quitAll(int fd);
+    std::map<int, std::string> clients;
+    std::vector<struct pollfd> pollFds;
+
 private:
     int port;
     int serverSocket;
-    std::vector<struct pollfd> pollFds;
-    std::map<int, std::string> clients;
     std::string hostName;
 
     void setHostName();

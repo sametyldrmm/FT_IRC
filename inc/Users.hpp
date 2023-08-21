@@ -18,16 +18,16 @@ struct UsersAuth {
 
 class Users {
 private:
-    std::vector<int> allUsersFd;
-    std::map<int, std::string> username;
-    std::map<int, std::string> nickname;
-    std::map<int, std::string> hostname;
-    std::map<int, std::string> realname;
-    std::map<int, int> usersMod;
+    std::vector<int> allUsersFd; //  -
+    std::map<int, std::string> username;   // -
+    std::map<int, std::string> nickname;  // -
+    std::map<int, std::string> hostname;  // -
+    std::map<int, std::string> realname;  // -
+    std::map<int, int> usersMod; // -
     std::vector<std::string> channels;
-    std::map<int, bool> usersAuth;
-    std::map<int, UsersAuth> usersAuthStruct;
-    std::map<int, bool> usersWelcomeMessage;
+    std::map<int, bool> usersAuth; // -
+    std::map<int, UsersAuth> usersAuthStruct; // -
+    std::map<int, bool> usersWelcomeMessage; // -
 
 public:
     Users();
@@ -44,6 +44,7 @@ public:
 	int getNickname(const std::string& nick) const;
     void setNickName(int id, const std::string& name);
 	bool controlNickName(const std::string name);
+	void removeUserAllInfo(int fd);
 
     // Getters for Hostname
     std::string getHostname(int id) const;
@@ -85,7 +86,6 @@ public:
 
 	std::string getPrefix(const int &fd) const;
 
-	//void channel
 };
 
 #endif //USERS_HPP

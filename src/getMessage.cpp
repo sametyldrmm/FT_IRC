@@ -223,11 +223,10 @@ void getMessage::CommandPart(const std::string &joinMessage)
                 sender(channelUsers[i], server_msg);
             }
         }
-
 		this->info_server.channels.removeChannelUser(messageVector[1].substr(1), fd);
 		this->info_server.channelChangeUserInfoPush(fd, messageVector[1].substr(1));
-
-    }
+    
+	}
 }
 
 void getMessage::CommandKick(const std::string &joinMessage)
@@ -258,17 +257,18 @@ void getMessage::CommandKick(const std::string &joinMessage)
 
 void getMessage::CommandQuit(const std::string &joinMessage)
 {
-	std::string error = Error("QUIT", this->info_server, fd) = joinMessage.c_str();
-
+	// std::string error = Error("QUIT", this->info_server, fd) = joinMessage.c_str();
+	std::string error = "";
 	if (error != std::string(""))
 	{
 		sender(fd, error);
 	}
 	else
 	{
+		std::string server_msg = this->info_server.users.getPrefix(fd) + " PRIVMSG " + joinMessage + "\r\n";
+		//this->info_server.channelAllChangeUserInfoPush(fd, server_msg);
 
-		std::string server_msg = this->info_server.users.getPrefix(fd) + " PRIVMSG" + joinMessage.substr(1) + "\r\n";
-		this->info_server.channelAllChangeUserInfoPush(fd, server_msg);
+		this->info_server.quitAll(fd);
 	}
 }
 
@@ -302,6 +302,8 @@ void getMessage::typeFinder()
         returnMessage = "";
     else if ( messageVector[0] == "KICK")
 		CommandKick(joinMessage);
+	else if ( messageVector[0] == "QUIT")
+		CommandQuit(joinMessage);
 	if (this->info_server.users.getUserWelcomeMessage(fd) == false && info_server.users.getUserAuth(fd))
         CommandWelcome(joinMessage);
     if (info_server.users.getUserAuth(fd) == false && !(messageVector[0] == "WHO" || messageVector[0] == "NOTICE" || messageVector[0] == "PING" || messageVector[0] == "NICK" || messageVector[0] == "PASS" || messageVector[0] == "USER"))
