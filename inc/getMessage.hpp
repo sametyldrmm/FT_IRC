@@ -39,6 +39,8 @@ public:
     void CommandPart(const std::string &joinMessage);
     void CommandKick(const std::string &joinMessage);
     void CommandQuit(const std::string &joinMessage);
+    void CommandTopic(const std::string &joinMessage);
+	void CommandNotice(const std::string &joinMessage);
     getMessage(const std::string& str,Server &server,int fd);
     ~getMessage();
 };

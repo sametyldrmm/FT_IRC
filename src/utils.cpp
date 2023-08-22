@@ -42,6 +42,7 @@ std::string join(const std::vector<std::string>& vec, const std::string& delimit
     return result;
 }
 
+
 void sender(int fd,const std::string msj)
 {
     send(fd, msj.c_str(), msj.size(), 0);

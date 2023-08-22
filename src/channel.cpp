@@ -10,8 +10,6 @@ Channel::~Channel()
     // Destructor implementation
 }
 
-// Getter functions
-
 std::vector<std::string> Channel::getAllChannels() const
 {
     return allChannels;
@@ -210,7 +208,6 @@ bool Channel::removeChannelOwner(const std::string& channel)
 	return false;
 }
 
-
 bool Channel::removeChannelAllChannel(const std::string& channel)
 {
 	try
@@ -224,7 +221,6 @@ bool Channel::removeChannelAllChannel(const std::string& channel)
 	}
 	return true;	
 }
-
 
 bool Channel::removeChannelUsers(const std::string& channel)
 {

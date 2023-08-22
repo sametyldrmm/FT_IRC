@@ -35,7 +35,7 @@ public:
 	void quitAll(int fd);
     std::map<int, std::string> clients;
     std::vector<struct pollfd> pollFds;
-
+	void concatenateStrings(int fd,std::vector<int> users,const char* arg1, ...) ;
 private:
     int port;
     int serverSocket;
@@ -60,8 +60,6 @@ private:
     int getClientPort(const sockaddr_in &clientAddress);
     void addClient(int clientSocket, const std::string &clientAddress);
     void addClientToPolling(int clientSocket);
-
-	
 
 };
 

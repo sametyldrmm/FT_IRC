@@ -7,7 +7,6 @@ class Channel
 private:
     std::vector<std::string> allChannels;
     std::map<std::string, std::vector<int> > channelUsers;
-    //std::map<std::string, std::vector<int> > channelAdmins;
     std::map<std::string, std::string> channelTopics;
     std::map<std::string, int> channelOwner;
 
@@ -20,20 +19,17 @@ public:
     bool getAllChannels(const std::string& channel) const;
     std::vector<int> getChannelUsers(const std::string& channel) const;
     bool getChannelUsers(const std::string& channel,int fd) const;
-    // std::vector<int> getChannelAdmins(const std::string& channel) const;
     std::string getChannelTopic(const std::string& channel) const;
     int getChannelOwner(const std::string& channel) const;
 
     void allChannelsPushBack(const std::string& channel);
     void allChannelsremove(const std::string& channel);
+
     // Setter functions
     void setAllChannels(const std::vector<std::string>& channels);
     void setChannelUsers(const std::string& channel, const std::vector<int>& users);
-    // void setChannelAdmins(const std::string& channel, const std::vector<int>& admins);
-    // void setChannelAdmins(const std::string& channel, const int& admin);
     void setChannelTopic(const std::string& channel, const std::string& topic);
     void setChannelOwner(const std::string& channel, const int owner);
-
     // Update functions
     void updateChannelUsers(const std::string& channel, const std::vector<int> users);
     // void updateChannelAdmins(const std::string& channel, const std::vector<int> admins);
@@ -42,13 +38,10 @@ public:
 
     // Additional update functions for modifying vector values
     void updateChannelUser(const std::string& channel, const int oldUser, const int newUser);
-    // void updateChannelAdmin(const std::string& channel, const int oldAdmin, const int newAdmin);
     void removeChannelUser(const std::string& channel, int fd);
-    // void removeChannelAdmin(const std::string& channel, int fd);
 
     // Additional update functions for modifying vector values
     void addChannelUser(const std::string& channel, int fd);
-    // void addChannelAdmin(const std::string& channel,int fd);
 
     std::vector<std::string> findChannelsByUser(int fd) const;
 	
@@ -58,8 +51,6 @@ public:
 	bool removeChannelUsers(const std::string& channel);
 	bool removeChannelTopic(const std::string& channel);
 	bool removeChannelAllInfo(const std::string& channel);
-
-	
 };
 
 #endif  // CHANNEL_HPP

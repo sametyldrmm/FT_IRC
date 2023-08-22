@@ -169,9 +169,9 @@ void Server::addClientToPolling(int clientSocket)
     users.createUser(newClientPollFd.fd,undefined,undefined,undefined,undefined);
 	pollFds.push_back(newClientPollFd);
 	// NOT REGİSTERED
-	static int i = 0;
+	// static int i = 0;
 	// if(i++ != 0)
-	// 	sender(clientSocket, ERR_NOTREGISTERED(this->hostName,undefined) + "\r\n") ;
+		// sender(clientSocket, ERR_NOTREGISTERED(this->hostName,undefined) + "\r\n") ;
 
 }
 
@@ -364,7 +364,7 @@ void Server::quitAll(int fd)
 		else
 		{
 			this->channels.removeChannelUser(userChannels[i], fd);
-
+			
 						std::vector<int> channelUsers = this->channels.getChannelUsers(userChannels[i]);
             for (int i = 0; i < (int)channelUsers.size(); i++)
             {
@@ -378,4 +378,23 @@ void Server::quitAll(int fd)
 	}
 
 	this->users.removeUserAllInfo(fd);
+}
+
+void Server::concatenateStrings(int fd ,std::vector<int> users,const char* arg1, ...) {
+    std::string result;
+    va_list args;
+    va_start(args, arg1);
+
+    const char* currentArg = arg1;
+    while (currentArg != NULL) {
+        result += currentArg;
+        currentArg = va_arg(args, const char*);
+    }
+
+    va_end(args);
+	for (int i = 0; i < (int)users.size(); i++)
+	{ 
+		if(fd == -1)
+			sender(users[i], result);
+	}
 }

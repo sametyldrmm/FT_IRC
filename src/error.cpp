@@ -41,35 +41,17 @@ void Error::nickError()
         this->ret_mesagge = ERR_NONICKNAMEGIVEN(this->server.users.getHostname(fd), this->server.users.getNickname(fd)) +"\r\n";
         return ;
     }
-    if (message.size() > 30)
-    {
-        this->ret_mesagge = ERR_ERRONEUSNICKNAME(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message) +"\r\n";
-        return ;
-    }
-    if (message.find_first_of(" \t\r\n\v\f") != std::string::npos)
-    {
-        this->ret_mesagge = ERR_ERRONEUSNICKNAME(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message) +"\r\n"; 
-        return ;
-    }
-    if (message.find_first_not_of(VALIDCHARS) != std::string::npos)
-    {
-        this->ret_mesagge = ERR_ERRONEUSNICKNAME(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message) +"\r\n";
-        return ;
-    }
-    if(1)
-    {
-        // std::cout << message ;
-        // std::vector<int> allFd = this->server.users.getAllUsersFd();
-        // for(size_t i = 0; i < allFd.size(); i++)
-        // {
-        //     std::cout << this->server.users.getNickname(allFd[i]) << message << std::endl;
-        //     if(this->server.users.getNickname(allFd[i]) == trim(message))
-        //     {
-        //         this->ret_mesagge = ERR_NICKNAMEINUSE(this->server.users.getHostname(fd), trim(message)) +"\r\n";
-        //         return ;
-        //     }
-        // }
-    }
+	message = trim(message);
+    // if (message.size() > 30)
+    // {
+    //     this->ret_mesagge = ERR_ERRONEUSNICKNAME(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message) +"\r\n";
+    //     return ;
+    // }
+    // if (message.find_first_not_of(VALIDCHARS) != std::string::npos)
+    // {
+    //     this->ret_mesagge = ERR_ERRONEUSNICKNAME(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message) +"\r\n";
+    //     return ;
+    // }
     return ;
 }
 
@@ -143,6 +125,7 @@ void Error::userError()
         ret_mesagge = ERR_NEEDMOREPARAMS(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message)+"\r\n";
         return;
     }
+	ret_mesagge = "";
     // this->server.users.updateUserNameAllValue(this->server.users.getUsername(fd), username);
     this->server.users.setUserName(fd,username);
     this->server.users.setUserMod(fd, mode);
@@ -212,8 +195,6 @@ void Error::partError()
 	}
 	
 	int tempp_fd = this->server.channels.getChannelOwner(msgVec[0].substr(1));
-	
-	std::cout << tempp_fd << "<a" << fd << "\n;";
 
 	if (fd == tempp_fd)
 	{
@@ -228,9 +209,7 @@ void Error::partError()
 		}
 		else
 		{
-	
 			int temp_fd = users[fd == users[0]];
-			std::cout << "fd: " << fd << "    temp_fd: " << temp_fd << std::endl;
 			this->server.channels.updateChannelOwner(msgVec[0].substr(1), users[0 + fd == users[0]]);
 			sender(temp_fd, (this->server.users.getPrefix(temp_fd) + " MODE " + msgVec[0] + " +o " + this->server.users.getNickname(temp_fd) + "\r\n"));
 			
@@ -248,7 +227,6 @@ void Error::kickError()
 		ret_mesagge = ERR_NEEDMOREPARAMS(this->server.users.getHostname(fd),this->server.users.getNickname(fd),"KICK") +"\r\n";
 		return ;
 	}
-	std::cout << "message : " << message << std::endl;
 	std::vector<std::string> msgVec = split(message,' ');
 	
 	if (this->server.channels.getAllChannels(msgVec[0].substr(1)) == false)
@@ -281,7 +259,6 @@ void Error::kickError()
 		std::vector<int> users = this->server.channels.getChannelUsers(msgVec[0].substr(1));
 		if (users.size() == 1)
 		{
-			std::cout << "users_fd[i] : " << this->server.users.getNickname(msgVec[1]) << std::endl;
 			std::string server_msg = this->server.users.getPrefix(this->server.users.getNickname(msgVec[1])) + " KICK " + msgVec[0] + " " + msgVec[1] + "\r\n";
 			sender(this->server.users.getNickname(msgVec[1]), server_msg);
 			this->server.channels.removeChannelAllInfo(msgVec[0].substr(1));
@@ -300,9 +277,7 @@ void Error::kickError()
 			return ;
 		}
 	}
-
 }
-//
 
 std::string Error::operator=(const std::string& str)
 {
@@ -338,4 +313,3 @@ std::string Error::operator=(const std::string& str)
 
     return ret_mesagge;
 }
-

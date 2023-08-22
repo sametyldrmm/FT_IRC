@@ -5,7 +5,7 @@ CC := g++
 CFLAGS := -Wall -Wextra -Werror -std=c++98 -g 
 
 # Derleme hedefi
-TARGET := ft_irc
+TARGET := ircserv
 
 # Kaynak dosyaları
 SOURCES := src/main.cpp src/server.cpp  src/getMessage.cpp src/utils.cpp src/users.cpp src/channel.cpp src/error.cpp
