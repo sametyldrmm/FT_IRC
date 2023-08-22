@@ -21,12 +21,12 @@
 class getMessage ;
 class Server {
 public:
-    Server(int port);
+    Server(int port,int password);
     void start();
     Users users;
     Channel channels;
-    int Password ;
-	
+    int Password;
+		
 	void channelAllChangeUserInfoPush(int fd);
 	void channelChangeUserInfoPush(int fd, std::string channelName);
 	void channelAllChangeUserInfoPush(int fd, std::string message);
@@ -38,7 +38,8 @@ public:
 	void concatenateStrings(int fd,std::vector<int> users,const char* arg1, ...) ;
 private:
     int port;
-    int serverSocket;
+
+	int serverSocket;
     std::string hostName;
 
     void setHostName();

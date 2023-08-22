@@ -30,6 +30,8 @@ public:
     void privMsg();
     void partError();
 	void kickError();
+    void noticeError();
+	void topicError();
     std::string operator=(const std::string& str);
     ~Error();
 };

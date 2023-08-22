@@ -129,8 +129,6 @@ void getMessage::CommandJoin(const std::string &joinMessage)
 			this->info_server.channels.allChannelsremove(messageVector[0].substr(1));
 			return ;
 		}
-		if(this->info_server.channels.getChannelTopic(messageVector[1]) != "")
-			std::string server_msg = this->info_server.users.getPrefix(fd) + " NOTICE " + messageVector[1] + " :" + this->info_server.channels.getChannelTopic(messageVector[1]) + "\r\n";
 		this->info_server.channelChangeUserInfoPush(fd, channelName);
     }
 }
@@ -263,7 +261,7 @@ void  getMessage::CommandTopic(const std::string &joinMessage)
 		std::cout << messageVector[0] << messageVector[1];
 		if (messageVector[1][0] == '#')
 		{
-			this->info_server.channels.setChannelTopic(messageVector[1].substr(1), send_msg);
+			this->info_server.channels.setChannelTopic(messageVector[1].substr(1), trim(send_msg));
 			std::vector<int> channelUsers = this->info_server.channels.getChannelUsers(messageVector[1].substr(1));
 			this->info_server.concatenateStrings(-1,channelUsers, (this->info_server.users.getPrefix(fd) + " TOPIC " + messageVector[1] + " " + send_msg + "\r\n").c_str(), NULL);
 		}
@@ -287,7 +285,7 @@ void getMessage::CommandNotice(const std::string &joinMessage)
 		if (messageVector[1][0] == '#')
 		{
 			std::vector<int> channelUsers = this->info_server.channels.getChannelUsers(messageVector[1].substr(1));
-			this->info_server.concatenateStrings(fd,channelUsers, (this->info_server.users.getPrefix(fd) + " NOTICE " + messageVector[1] + " :" + send_msg + "\r\n").c_str(), NULL);
+			this->info_server.concatenateStrings(-1,channelUsers, (this->info_server.users.getPrefix(fd) + " NOTICE " + messageVector[1] + " :" + send_msg + "\r\n").c_str(), NULL);
 		}
 		else
 		{ 
@@ -306,27 +304,6 @@ void getMessage::typeFinder()
     joinMessage = join(joinMessageVector, " ");
 
     this->info_server.users.autoUpdateUserAuth(fd);
-	// std::cout << (int)(split(split(message.c_str(), '\n')[1].c_str(),' ')[0] == "USER") << std::endl;
-	// std::cout << (int)(split(split(message.c_str(), '\n')[1].c_str(),' ')[0] == "USER") << std::endl;
-	// std::cout << (int)(split(split(message.c_str(), '\n')[1].c_str(),' ')[0] == "USER") << std::endl;
-	// std::cout << (int)(split(split(message.c_str(), '\n')[1].c_str(),' ')[0] == "USER") << std::endl;
-	// std::cout << (int)(split(split(message.c_str(), '\n')[1].c_str(),' ')[0] == "USER") << std::endl;
-	// std::cout << (int)(split(split(message.c_str(), '\n')[1].c_str(),' ')[0] == "USER") << std::endl;
-
-	// std::cout << (int)(split(split(message.c_str(), '\n')[0].c_str(),' ')[0] == "NICK") << std::endl;
-	// std::cout << (int)(split(split(message.c_str(), '\n')[0].c_str(),' ')[0] == "NICK") << std::endl;
-	// std::cout << (int)(split(split(message.c_str(), '\n')[0].c_str(),' ')[0] == "NICK") << std::endl;
-	// if (this->info_server.users.getUserWelcomeMessage(fd) == false && split(split(message.c_str(), '\n')[1].c_str(),' ')[0] == "USER" && split(split(message.c_str(), '\n')[0].c_str(),' ')[0] == "NICK" )
-	// {
-	// 	std::vector<std::string> nick = split(split(message.c_str(), '\n')[0].c_str(), ' ');
-	// 	std::vector<std::string> user = split(split(message.c_str(), '\n')[1].c_str(), ' ');
-	// 	// CommandNick();
-	// 	// CommandUser( std::vector<std::string>((split(split(message, '\n')[1])).begin() + 1, split(split(message, '\n')[1]).end()));
-	// 	joinMessageVector = std::vector<std::string>(messageVector.begin() + 1, messageVector.end());
-    // 	joinMessage = join(joinMessageVector, " ");
-
-	// 	std::cout << "sss\n\n\n\n\ns";
-	// }	
 
     if (messageVector[0] == "CAP")
         CommandCap(messageVector[1]);

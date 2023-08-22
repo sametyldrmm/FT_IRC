@@ -6,7 +6,7 @@ CFLAGS := -Wall -Wextra -Werror -std=c++98 -g
 
 # Derleme hedefi
 TARGET := ircserv
-
+SENDER_LOG := sender.log
 # Kaynak dosyaları
 SOURCES := src/main.cpp src/server.cpp  src/getMessage.cpp src/utils.cpp src/users.cpp src/channel.cpp src/error.cpp
 
@@ -27,7 +27,7 @@ $(TARGET): $(OBJECTS)
 
 # Temizleme işlemi
 clean:
-	rm -f $(OBJECTS) $(TARGET) 
+	rm -f $(OBJECTS) $(TARGET) $(SENDER_LOG)
 
 re : clean all
 # PHONY hedefleri

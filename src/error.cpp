@@ -42,16 +42,11 @@ void Error::nickError()
         return ;
     }
 	message = trim(message);
-    // if (message.size() > 30)
-    // {
-    //     this->ret_mesagge = ERR_ERRONEUSNICKNAME(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message) +"\r\n";
-    //     return ;
-    // }
-    // if (message.find_first_not_of(VALIDCHARS) != std::string::npos)
-    // {
-    //     this->ret_mesagge = ERR_ERRONEUSNICKNAME(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message) +"\r\n";
-    //     return ;
-    // }
+    if (message.find_first_not_of(VALIDCHARS) != std::string::npos)
+    {
+        this->ret_mesagge = ERR_ERRONEUSNICKNAME(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message) +"\r\n";
+        return ;
+    }
     return ;
 }
 
@@ -146,11 +141,6 @@ void Error::joinError()
         return;
     }
     if(split(message,' ')[0][0] != '#')
-    {
-        ret_mesagge = ERR_NOSUCHCHANNEL(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message)+"\r\n";
-        return;
-    }
-    if(message.size() > 50)
     {
         ret_mesagge = ERR_NOSUCHCHANNEL(this->server.users.getHostname(fd), this->server.users.getNickname(fd), message)+"\r\n";
         return;
@@ -279,6 +269,54 @@ void Error::kickError()
 	}
 }
 
+void Error::noticeError()
+{
+
+	if (message == "")
+	{
+		ret_mesagge = ERR_NEEDMOREPARAMS(this->server.users.getHostname(fd),this->server.users.getNickname(fd),"NOTICE") +"\r\n";
+		return ;
+	}
+	std::vector<std::string> msgVec = split(message,' ');
+	if (msgVec[0][0] == '#')
+	{
+		if (this->server.channels.getAllChannels(msgVec[0].substr(1)) == false)
+		{
+			ret_mesagge = ERR_NOSUCHNICK(this->server.users.getHostname(fd),this->server.users.getNickname(fd),msgVec[0]) +"\r\n";
+			return ;
+		}
+		return ;
+	}
+
+	if (this->server.users.controlNickName(msgVec[0]) == true)
+	{
+		ret_mesagge = ERR_NOSUCHNICK(this->server.users.getHostname(fd),this->server.users.getNickname(fd),msgVec[0]) +"\r\n";
+		return ;
+	}
+	return ;
+}
+
+void Error::topicError()
+{
+	if (message == "")
+	{
+		ret_mesagge = ERR_NEEDMOREPARAMS(this->server.users.getHostname(fd),this->server.users.getNickname(fd),"NOTICE") +"\r\n";
+		return ;
+	}
+	std::vector<std::string> msgVec = split(message,' ');
+
+	if (msgVec[0][0] == '#')
+	{
+		if (this->server.channels.getAllChannels(msgVec[0].substr(1)) == false)
+		{
+			ret_mesagge = ERR_NOSUCHNICK(this->server.users.getHostname(fd),this->server.users.getNickname(fd),msgVec[0]) +"\r\n";
+			return ;
+		}
+	}
+	
+	return ;
+}
+
 std::string Error::operator=(const std::string& str)
 {
     this->message = str;
@@ -310,6 +348,15 @@ std::string Error::operator=(const std::string& str)
 	{
 		kickError();
 	}
+	if(command == "NOTICE")
+	{
+		noticeError();
+	}
+	if (command == "TOPIC")
+	{
+		topicError();
+	}
+
 
     return ret_mesagge;
 }

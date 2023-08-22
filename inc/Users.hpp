@@ -18,16 +18,16 @@ struct UsersAuth {
 
 class Users {
 private:
-    std::vector<int> allUsersFd; 
-    std::map<int, std::string> username;   
-    std::map<int, std::string> nickname;  
-    std::map<int, std::string> hostname;  
-    std::map<int, std::string> realname;  
-    std::map<int, int> usersMod; 
-    std::vector<std::string> chann
+    std::vector<int> allUsersFd;
+    std::map<int, std::string> username;
+    std::map<int, std::string> nickname;
+    std::map<int, std::string> hostname;
+    std::map<int, std::string> realname;
+    std::map<int, int> usersMod;
+    std::vector<std::string> channels;
     std::map<int, bool> usersAuth; 
-    std::map<int, UsersAuth> usersAuthStruct; 
-    std::map<int, bool> usersWelcomeMessage; 
+    std::map<int, UsersAuth> usersAuthStruct;
+    std::map<int, bool> usersWelcomeMessage;
 
 public:
     Users();
